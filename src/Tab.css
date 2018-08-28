@@ -1,7 +1,9 @@
 .Tab{
+    font-family: 'Raleway', sans-serif;
     margin:10px;
     margin-bottom:0px;
     font-size: 18px;
+    font-weight: 300;
 }
 .line{
     border-top: 1px solid var(--main-text);

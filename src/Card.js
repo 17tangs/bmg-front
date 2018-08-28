@@ -20,10 +20,10 @@ class Card extends Component{
     render(){
         let m = "";
         if(this.props.pos === 'r'){
-            m = "0px 0px 30px 0px";
+            m = "0px 0px var(--side-margin) 0px";
         }
         else{
-            m = "0px 30px 0px 0px";
+            m = '0px var(--side-margin) 0px 0px';
         }
         return(
             <a className = "card" target = "_blank"  style={{textDecoration:'none', margin:`${m}`}} href={this.props.cardData.link} onMouseOver={this.handleHover} onMouseOut={this.handleHover}>

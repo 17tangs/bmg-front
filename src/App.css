@@ -30,23 +30,24 @@
 
 .regionFull{
     min-width: 600px;
-    margin-left:30px;
-    margin-right:30px;
-    margin-top:30px;
+    margin-left:var(--side-margin);
+    margin-right:var(--side-margin);
+    margin-top:var(--side-margin);
     width:calc(100% - 2 * var(--side-margin));
     height:520px;
     display: flex;
     justify-content: center;
 }
 .regionSplitVL{
-    margin-right:15px;
     width:50%;
     height:100%;
     display:flex;
 }
 .regionSplitVR{
-    margin-left:15px;
-    width:50%;
+    width: calc(50% - var(--side-margin));
     height:100%;
+    margin-right: var(--side-margin);
     display:flex;
+    flex-direction:column;
+    justify-content: center;
 }

@@ -11,7 +11,8 @@ class Footer extends Component{
                     matches ? (
                         <div className="foot">
                             <div className="footline">
-                                <div className="banquan"><p>{this.props.footerData.copyright} </p><p>{this.props.footerData.message}</p></div>
+                                <p>Copyright © 2017 Boston Meditech Group - Advancing women's healthcare — Lyrical WordPress theme by GoDaddy</p>
+
                             </div>
                             <div className="footline2" style={{pointerEvents:'none'}}>
                             </div>
@@ -19,8 +20,7 @@ class Footer extends Component{
                     ) : (
                         <div className="foot">
                             <div className="footline">
-                                <p>{this.props.footerData.copyright}</p>
-                                <p>{this.props.footerData.message}</p>
+                                <p>Copyright © 2017 Boston Meditech Group - Advancing women's healthcare — Lyrical WordPress theme by GoDaddy</p>
                             </div>
                         </div>
                     )

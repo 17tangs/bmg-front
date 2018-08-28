@@ -17,7 +17,8 @@ class NewsRegion extends Component{
                     ) : (
                         <div className="regionFull n">
                             <Card pos='l' cardData={this.props.newsData.cardData[0]}/>
-                            <Card pos='r' cardData={this.props.newsData.cardData[1]}/>
+                            <Card pos='l' cardData={this.props.newsData.cardData[1]}/>
+                            <Card pos='r' cardData={this.props.newsData.cardData[2]}/>
                         </div>
                     )
                 }

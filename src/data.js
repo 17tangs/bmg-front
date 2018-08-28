@@ -8,7 +8,7 @@ const headerInfoEn = {
 }
 
 const bannerData = {
-    header: "MedVisionCloud",
+    header: "Utilize AI, Big Data and Cloud technologies to advance women's healthcare. Firstly to eliminate women's breast cancer",
     start: {
         en: "Join Us",
     },
@@ -57,11 +57,15 @@ const newsDataEn = {
     cardData: [{
         link: "http://huajiantech.com/new.html",
         img: require('./img/u17.jpg'),
-        content: "Dr Lotus AI debuted at 2018(13th) China Healthcare Information Technology and Big Data"
+        content: "Doctor AI for Breast Imaging Center"
      },{
         link: "https://mp.weixin.qq.com/s/qQNyLgV46LgN0UGOeyyk8A",
         img: require('./img/cardBG1.jpg'),
-        content: "Ultrasound? Mammogram? CT? MRI? How to choose breast examination..."
+        content: "AI, Big Data and Cloud development platform for Healthcare"
+    },{
+        link: "https://mp.weixin.qq.com/s/qQNyLgV46LgN0UGOeyyk8A",
+        img: require('./img/cardBG1.jpg'),
+        content: "GPU Cloud Platform"
     }]
  }
 

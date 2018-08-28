@@ -15,7 +15,9 @@ class Header extends Component{
                     <span>Boston Meditech Group </span>
                 </div>
                 <div className="tabs">
-                    <Tab name = 'home'/>
+                    <Tab name = 'Home'/>
+                    <Tab name = 'Products'/>
+                    <Tab name = 'Contact Us'/>
                 </div>
             </div>
         )

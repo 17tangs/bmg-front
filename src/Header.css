@@ -30,4 +30,5 @@
 .tabs{
     margin-right: var(--side-margin);
     color: #FFF;
+    display:flex;
 }

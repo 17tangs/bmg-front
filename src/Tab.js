@@ -35,7 +35,7 @@ class Tab extends Component{
         return(
             <div className = "Tab" onMouseOver={this.hover} onMouseOut={this.hover}>
                 <div style={{marginBottom:'2px', color: `${this.state.color}`}}>{this.props.name}</div>
-                <div className = {this.state.classes} style = {{borderTop: `1px solid ${this.state.lineColor}`}}></div>
+                <div className = {this.state.classes} style = {{borderTop: `2px solid ${this.state.lineColor}`}}></div>
             </div>
         )
     }
