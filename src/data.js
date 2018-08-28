@@ -10,8 +10,7 @@ const headerInfoEn = {
 const bannerData = {
     header: "MedVisionCloud",
     start: {
-        ch: "进入判读系统",
-        en: "START HERE",
+        en: "Join Us",
     },
     langs: [
     {

@@ -1,4 +1,5 @@
 .App {
+    background: var(--bg-color);
   text-align: center;
 }
 

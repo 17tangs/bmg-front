@@ -3,11 +3,11 @@
     width: 50%; /*Calc(100% - var(--size-margin));*/
     background:#F9F9F9;
     color:#777;
-    box-shadow: 2px 2px 3px #CCC;
+    box-shadow: 2px 2px 3px #000;
     margin-right: var(--side-margin);
 }
 .card:hover{
-    box-shadow: 5px 10px 18px #CCC;
+    box-shadow: 5px 10px 18px #000;
 }
 .card .headerImg{
     height:60%;

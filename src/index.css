@@ -1,8 +1,9 @@
 
 html{
-    --header-height:64px;
+    --header-height:80px;
     --side-margin:30px;
     --main-blue: rgba(0, 102, 204, 1);
+    --bg-color: #212121;
 }
 body {
   margin: 0;

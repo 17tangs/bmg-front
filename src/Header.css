@@ -1,12 +1,12 @@
 .Header {
+    background-color: var(--bg-color);
     height: var(--header-height);
     width: 100%;
     min-width:735px;
-    background: #FFFFFF;
     position: fixed;
     top: 0;
     z-index: 3;
-    box-shadow: 2px 2px 3px #AAAAAA;
+    box-shadow: 2px 2px 3px #333;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -16,11 +16,13 @@
     height:32.8px;
     display:flex;
     align-items: center;
+    margin-left: var(--side-margin);
 }
-.headerLogo img{
-    height:32.8px;
-    width:166.8px;
-    margin-left:var(--side-margin);
+.headerLogo span{
+    font-size: 36px;
+    font-weight: 800;
+    text-decoration: none;
+    color:#FFF;
 }
 
 

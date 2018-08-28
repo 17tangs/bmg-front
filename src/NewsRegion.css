@@ -7,20 +7,9 @@
     color: #777;
     position:relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.n{
+    margin-bottom:var(--side-margin);
+}
 
 
 #companyNews{
