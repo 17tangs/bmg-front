@@ -1,3 +1,9 @@
+
+html{
+    --header-height:64px;
+    --side-margin:30px;
+    --main-blue: rgba(0, 102, 204, 1);
+}
 body {
   margin: 0;
   padding: 0;

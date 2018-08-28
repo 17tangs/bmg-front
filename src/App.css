@@ -26,3 +26,26 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.regionFull{
+    min-width: 600px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:30px;
+    width:calc(100% - 2 * var(--side-margin));
+    height:520px;
+    display: flex;
+    justify-content: center;
+}
+.regionSplitVL{
+    margin-right:15px;
+    width:50%;
+    height:100%;
+    display:flex;
+}
+.regionSplitVR{
+    margin-left:15px;
+    width:50%;
+    height:100%;
+    display:flex;
+}
