@@ -2,7 +2,8 @@
 html{
     --header-height:80px;
     --side-margin:30px;
-    --main-blue: rgba(0, 102, 204, 1);
+    --main-blue: #03A9F4;
+    --main-text: #FFF;
     --bg-color: #212121;
 }
 body {

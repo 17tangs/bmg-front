@@ -1,0 +1,9 @@
+.Tab{
+    margin:10px;
+    margin-bottom:0px;
+    font-size: 18px;
+}
+.line{
+    border-top: 1px solid var(--main-text);
+    height:10px;
+}

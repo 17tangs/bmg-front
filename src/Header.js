@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Tab from './Tab'
 import './Header.css';
+
 
 
 class Header extends Component{
@@ -11,6 +13,9 @@ class Header extends Component{
             <div className="Header">
                 <div className="headerLogo">
                     <span>Boston Meditech Group </span>
+                </div>
+                <div className="tabs">
+                    <Tab name = 'home'/>
                 </div>
             </div>
         )

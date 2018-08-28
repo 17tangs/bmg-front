@@ -4,6 +4,7 @@ import Banner from './Banner';
 import NewsRegion from './NewsRegion';
 import Footer from './Footer';
 import {data} from './data.js'
+import './animate.css';
 import './App.css';
 
 class App extends Component {
