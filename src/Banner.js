@@ -30,20 +30,29 @@ class Banner extends Component{
     render(){
         return(
             //http://bostonmeditech.com/wp-content/uploads/2017/04/qtq50-583Xtc.jpeg
-            <div style={{background: `url(http://bostonmeditech.com/wp-content/uploads/2017/04/qtq50-583Xtc.jpeg) no-repeat`, backgroundAttachment:'fixed', backgroundSize: "auto 140%"}} className="banner" >
-                {/* <Particles className='particles particleContainer' params={particleOptions}/> */}
+            <div style={{background: `url(${require('./img/bg1.jpeg')}) no-repeat`, backgroundSize: "100% 140%"}} className="banner" >
+                <Particles className='particles particleContainer' params={particleOptions}/>
                 <div className="shadow" />
-                <div className="regionSplitVL" />
-                <div className="regionSplitVR" >
-                    <p className="med1">{this.props.bannerData.header}</p>
-                    <div>
+                <div className="regionSplitVL" >
+                    <div className="med1" data-aos="fade-right"> <span style={{color:'red'}} > Eliminating </span> women's breast cancer using
+                        <div class="pushEffect">
+                          <span>AI</span>
+                          <span>Big Data</span>
+                          <span>Cloud</span>
+                        </div>
+                </div>
+
+
+                        {/* {this.props.bannerData.header}</p> */}
+                    {/* <div>
                         <div className="med4" onMouseOver={this.handleSelect} onMouseOut={this.handleSelect}>
                             <div className="starthere">
                                 <span>{this.props.bannerData.start.en}</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
+                <div className="regionSplitVR" />
             </div>
         )
     }

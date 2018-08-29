@@ -23,6 +23,14 @@
   font-size: large;
 }
 
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('./fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -39,9 +47,12 @@
     justify-content: center;
 }
 .regionSplitVL{
-    width:50%;
+    width: calc(50% - var(--side-margin));
     height:100%;
+    margin-left: 100px;
     display:flex;
+    flex-direction:column;
+    justify-content: center;
 }
 .regionSplitVR{
     width: calc(50% - var(--side-margin));

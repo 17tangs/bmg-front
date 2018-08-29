@@ -8,7 +8,7 @@ class Tab extends Component{
             classes: 'line',
             show: 'none',
             color: 'var(--main-text)',
-            lineColor: 'var(--bg-color)',
+            lineColor: 'rgba(0,0,0,0)',
         }
     }
     hover = (e) =>{
@@ -24,7 +24,7 @@ class Tab extends Component{
             this.setState({
                 classes: 'line',
                 color: 'var(--main-text)',
-                lineColor: 'var(--bg-color)',
+                lineColor: 'rgba(0,0,0,0)',
                 show: 'none',
             })
 

@@ -1,12 +1,13 @@
 .Header {
-    background-color: var(--bg-color);
+    color: var(--main-text);
+    background: rgba(0,0,0,0); /*linear-gradient(var(--bg-color) 30%, rgba(0,0,0,0));*/
     height: var(--header-height);
     width: 100%;
     min-width:735px;
     position: fixed;
     top: 0;
     z-index: 3;
-    box-shadow: 2px 2px 3px #333;
+    /* box-shadow: 2px 2px 3px #888; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +23,6 @@
     font-size: 36px;
     font-weight: 800;
     text-decoration: none;
-    color:#FFF;
 
 }
 
@@ -30,5 +30,5 @@
 .tabs{
     margin-right: var(--side-margin);
     color: #FFF;
-    display:flex;
+    display: flex;
 }

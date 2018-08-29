@@ -6,8 +6,16 @@ import Footer from './Footer';
 import {data} from './data.js'
 import './animate.css';
 import './App.css';
+import './rotate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 class App extends Component {
+    componentDidMount(){
+        AOS.init()
+        console.log(AOS);
+    }
   render() {
     return (
       <div className="App">

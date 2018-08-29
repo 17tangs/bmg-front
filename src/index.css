@@ -2,10 +2,10 @@
 
 html{
     --header-height:80px;
-    --side-margin:50px;
+    --side-margin:30px;
     --main-blue: #03A9F4;
     --main-text: #FFF;
-    --bg-color: #212121;
+    --bg-color:  #212121;
 }
 body {
   margin: 0;

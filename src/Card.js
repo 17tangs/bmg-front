@@ -6,7 +6,7 @@ class Card extends Component{
     constructor(){
         super();
         this.state={
-            color: '#777',
+            color: 'var(--main-text)',
         }
     }
     handleHover = (e) =>{
@@ -14,7 +14,7 @@ class Card extends Component{
             this.setState({color: 'var(--main-blue)'});
         }
         else{
-            this.setState({color: '#777'});
+            this.setState({color: 'var(--main-text)'});
         }
     }
     render(){
@@ -26,7 +26,7 @@ class Card extends Component{
             m = '0px var(--side-margin) 0px 0px';
         }
         return(
-            <a className = "card" target = "_blank"  style={{textDecoration:'none', margin:`${m}`}} href={this.props.cardData.link} onMouseOver={this.handleHover} onMouseOut={this.handleHover}>
+            <a data-aos="fade-up" className = "card" target = "_blank"  style={{textDecoration:'none', margin:`${m}`}} href={this.props.cardData.link} onMouseOver={this.handleHover} onMouseOut={this.handleHover}>
                 <div className="headerImg" style={{background:`url(${this.props.cardData.img})`, backgroundPosition:"center", backgroundSize:"auto 100%"}}></div>
                 <div className="content" style={{color:`${this.state.color}`}}>
                     <h2>{this.props.cardData.content}</h2>

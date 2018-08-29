@@ -11,9 +11,9 @@ class Header extends Component{
     render(){
         return(
             <div className="Header">
-                <div className="headerLogo">
+                {/* <div className="headerLogo">
                     <span>Boston Meditech Group </span>
-                </div>
+                </div> */}
                 <div className="tabs">
                     <Tab name = 'Home'/>
                     <Tab name = 'Products'/>
