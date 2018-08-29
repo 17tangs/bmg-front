@@ -3,27 +3,43 @@ import Header from './Header';
 import Banner from './Banner';
 import NewsRegion from './NewsRegion';
 import Footer from './Footer';
+import About from './About';
 import {data} from './data.js'
 import './animate.css';
 import './App.css';
 import './rotate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactPageScroller from "react-page-scroller";
+
 
 
 class App extends Component {
+    constructor(props){
+        super(props);
+        this.reactPageScroller = null;
+    }
     componentDidMount(){
-        AOS.init()
+        AOS.init({
+            duration:1500,
+        })
         console.log(AOS);
     }
-  render() {
-    return (
-      <div className="App">
-          <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
-          <Banner bannerData = {data.bannerData} />
-          <NewsRegion newsData={data.newsData}/>
-          <Footer footerData = {data.footerData} />
-      </div>
+    goToPage = (pageNumber) => {
+      this.reactPageScroller.goToPage(pageNumber);
+    }
+    render() {
+        return (
+
+            <div className="App">
+                <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
+                <ReactPageScroller ref={c => this.reactPageScroller = c}>
+                    <Banner bannerData = {data.bannerData} />
+                    <About />
+                </ReactPageScroller>
+             {/*  <NewsRegion newsData={data.newsData}/>
+              <Footer footerData = {data.footerData} /> */}
+            </div>
     );
   }
 }
