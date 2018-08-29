@@ -3,7 +3,8 @@ import Header from './Header';
 import Banner from './Banner';
 import NewsRegion from './NewsRegion';
 import Footer from './Footer';
-import About from './About';
+import Cloud from './Cloud';
+import AI from './AI';
 import {data} from './data.js'
 import './animate.css';
 import './App.css';
@@ -35,7 +36,8 @@ class App extends Component {
                 <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
                 <ReactPageScroller ref={c => this.reactPageScroller = c}>
                     <Banner bannerData = {data.bannerData} />
-                    <About />
+                    <AI />
+                    <Cloud />
                 </ReactPageScroller>
              {/*  <NewsRegion newsData={data.newsData}/>
               <Footer footerData = {data.footerData} /> */}

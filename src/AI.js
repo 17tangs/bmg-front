@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './About.css';
+import './AI.css';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
@@ -10,8 +10,8 @@ class About extends Component{
                 <div className = "left">
                     <Flip top>
                     <h1 style={{color:`var(--main-blue)`}}>AI <span style={{color:`var(--main-text)`}}>&</span> Big Data</h1>
-                </Flip>
                     {/* <div data-aos = 'fade-right'> */}
+                </Flip>
                         <Fade left>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nesciunt minima, provident ipsam officia distinctio reiciendis error fugit eveniet iste voluptas esse unde doloremque veritatis animi cum voluptatum maiores modi.</p>
