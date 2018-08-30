@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './AI.css';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
-import Stat from './Stat'
+import Stat from './Stat';
+import Model from './Model';
 
 class About extends Component{
     render(){
@@ -28,10 +29,11 @@ class About extends Component{
                 {/* </div> */}
                 </div>
                 <div className="right">
-                    <div className="imageContainer">
+                <Model />
+                    {/* <div className="imageContainer">
                         <img className="img1" src={require('./img/u25.png')}/>
                         <img className="img2" src={require('./img/u18.jpg')}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         )
