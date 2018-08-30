@@ -35,6 +35,63 @@
 .stats{
     display:flex;
 }
+.About .annotation{
+    width:600px;
+    height:450px;
+    position:relative;
+    border: 1px solid green;
+    color:var(--main-text);
+}
+.annotateImg{
+    z-index:4;
+    position:absolute;
+    top:140px;
+    left:40px;
+}
+.imgLine{
+    position:absolute;
+    top: 190px;
+    height:65px;
+    left:60px;
+    border-right:1px solid white;
+}
+.annotation .benign{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+.annotation .malignant{
+    position:absolute;
+    right:0px;
+    top:190px;
+}
+.malignant .line{
+    position:absolute;
+    height:50px;
+    right: 25px;
+    width:1px;
+    border:none;
+    border-right: 1px solid white;
+}
+.malignant .text{
+    position:absolute;
+    top: 55px;
+    right:0;
+    width:78px;
+
+}
+.benign .text{
+    width: 60px;
+    margin-bottom:7px;
+}
+.benign .line{
+    position:absolute;
+    right:25px;
+    width: 1px;
+    height:35px;
+    border:none;
+    border-right:1px solid white;
+}
 
 
 .About2{

@@ -15,7 +15,8 @@ cytoscape.use( coseBilkent );
 
 let cyStyle = {
     width: '600px',
-    height: '50%',
+    height: '450px',
+    border: '1px solid white',
 };
 
 let conf = {
@@ -77,6 +78,7 @@ class Model extends Component {
         super(props);
         this.state = { cy: {} }
     }
+
 
     componentDidMount() {
         conf.container = this.cyRef;
@@ -155,8 +157,12 @@ class Model extends Component {
             };
         const cys = cytoscape(conf);
         var node = '';
+        let hover = (node) =>{
+            this.props.handleHover(node);
+        }
         cys.on('mouseover', 'node', function(evt){
           node = evt.target.id();
+          hover(node);
           if(node === 'A1'){
               cys.elements(`edge`).style({
                   'width' :0.7,
@@ -235,8 +241,9 @@ class Model extends Component {
                   'background-color': '#391815',
               });
           }
-        });
+      })
         cys.on('mouseout', 'node', function(evt){
+            hover('none')
           node = evt.target.id();
           cys.elements(`edge`).style({
               'width' :1,
@@ -265,10 +272,6 @@ class Model extends Component {
     }
 
     render() {
-        var min = 1;
-        var max = 6;
-        var random =Math.floor(Math.random() * (max - min)) + min;
-        console.log(random);
         return <div className = "cy" style={cyStyle} ref={(cyRef) => {
             this.cyRef = cyRef;
         }}/>

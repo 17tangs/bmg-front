@@ -7,7 +7,27 @@ import Model from './Model';
 import Media from "react-media";
 
 class About extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            show: 'n',
+        }
+    }
+    handleHover = (e) =>{
+        if(e === 'A2' || e === 'A3'){
+            this.setState({show: 'b'})
+        }
+        else if(e === 'A1'){
+            this.setState({show: 'm'})
+        }
+        else{
+            this.setState({show: 'n'})
+        }
+    }
     render(){
+        let benign,malignant;
+        this.state.show === 'b' ? benign = 'block' : benign = 'none';
+        this.state.show === 'm' ? malignant = 'block' : malignant = 'none';
         return(
             <Media query="(max-width:1100px)">
                 {matches =>
@@ -30,7 +50,7 @@ class About extends Component{
                                      </div>
                                 </Fade>
                             </div>
-                             <Model width='500px'/>
+                            <Model handleHover={this.handleHover()}/>
                         </div>
                 ):(
                     <div className="About">
@@ -54,7 +74,24 @@ class About extends Component{
                         {/* </div> */}
                         </div>
                         <div className="right">
-                        <Model width='100%'/>
+                            <div className="annotation">
+                                <div className="annotateImg">
+                                    <h4>Image data</h4>
+                                </div>
+                                <div className="imgLine"/>
+                                <div>
+                                    <div className="benign" style={{display:`${benign}`}}>
+                                        <div className="text">93.4% Benign</div>
+                                        <div className="line"/>
+                                    </div>
+                                    <div className="malignant" style={{display:`${malignant}`}}>
+                                        <div className="line"/>
+                                        <div className="text">96.8% Malignant</div>
+                                    </div>
+                                </div>
+                                <Model handleHover = {this.handleHover}/>
+                            </div>
+
                             {/* <div className="imageContainer">
                                 <img className="img1" src={require('./img/u25.png')}/>
                                 <img className="img2" src={require('./img/u18.jpg')}/>
