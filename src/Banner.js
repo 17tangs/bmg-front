@@ -34,12 +34,12 @@ class Banner extends Component{
                 <Particles className='particles particleContainer' params={particleOptions}/>
                 <div className="shadow" />
                 <div className="regionSplitVL" >
-                    <div className="med1" data-aos="fade-right"> <span style={{color:'red'}} > Eliminating </span> women's breast cancer using
-                        <div class="pushEffect">
-                          <span>AI</span>
-                          <span>Big Data</span>
-                          <span>Cloud</span>
-                        </div>
+                    <div className="med1"> <span style={{color:'red'}} > Eliminating </span> women's breast cancer using
+                    <div class="pushEffect">
+                      <span>AI</span>
+                      <span>Big Data</span>
+                      <span>Cloud</span>
+                    </div>
                 </div>
 
 
