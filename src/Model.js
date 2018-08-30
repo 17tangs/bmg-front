@@ -15,7 +15,7 @@ cytoscape.use( coseBilkent );
 
 let cyStyle = {
     width: '100%',
-    height: '40%',
+    height: '100%',
 };
 
 let conf = {
@@ -23,13 +23,14 @@ let conf = {
     maxZoom: 1,
     boxSelectionEnabled: false,
     autounselectify: true,
-    zoomingEnabled: true,
+    zoomingEnabled: false,
     style: [
         {
             selector: 'node',
             style: {
-                'shape':'circle',
-                'content': '',
+                'width':'30px',
+                'height':'30px',
+                'shape':'ellipse',
                 'text-valign': 'center',
                 'text-halign': 'center',
                 'font-size': '12px',
@@ -54,9 +55,7 @@ let conf = {
             style: {
                 'width': 1,
                 "curve-style": "bezier",
-                'target-arrow-shape': 'triangle-backcurve',
                 'line-color': '#777',
-                'target-arrow-color': '#777',
                 'arrow-scale': '0.8',
             }
         }
@@ -160,21 +159,97 @@ class Model extends Component {
         var node = '';
         cys.on('mouseover', 'node', function(evt){
           node = evt.target.id();
-          cys.elements(`edge[source = "${node}"]`).style({
-              'width':1.7,
-              'line-color': '#03A9F4',
-          })
-          console.log( 'tapped ' + node );
+          if(node === 'A1'){
+              cys.elements(`edge`).style({
+                  'width' :0.7,
+                  'line-color': '#444',
+              })
+              cys.elements(`edge[source = "${node}"]`).style({
+                  'width':2.3,
+                  'line-color': '#03A9F4',
+                  'z-index': 3,
+              })
+              let s=[['C2'], ['C4'],['C1', 'C4'],['C5'],['C4']]
+              for(let i = 1; i<=5; i++){
+                  for(let j = 0; j<s[i-1].length; j++){
+                      cys.elements(`edge[source = "B${i}"][target="${s[i-1][j]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              let t = [['D1'],['D1'],[],['D1'],['D1']]
+              for(let k = 1; k<=5; k++){
+                  for(let l = 0; l<t[k-1].length; l++){
+                      cys.elements(`edge[source = "C${k}"][target="${t[k-1][l]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              cys.$('#D2').style({
+                  'background-color': '#391815',
+              });
+          }
+          if(node === 'A2'){
+              cys.elements(`edge`).style({
+                  'width' :0.7,
+                  'line-color': '#444',
+              })
+              cys.elements(`edge[source = "${node}"]`).style({
+                  'width':2.3,
+                  'line-color': '#03A9F4',
+                  'z-index': 3,
+              })
+              let s=[['C3'], ['C2'],['C1', 'C4'],['C3'],['C3','C5']]
+              for(let i = 1; i<=5; i++){
+                  for(let j = 0; j<s[i-1].length; j++){
+                      cys.elements(`edge[source = "B${i}"][target="${s[i-1][j]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              let t = [['D2'],['D2'],['D2'],['D2'],['D2']]
+              for(let k = 1; k<=5; k++){
+                  for(let l = 0; l<t[k-1].length; l++){
+                      cys.elements(`edge[source = "C${k}"][target="${t[k-1][l]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              cys.$('#D1').style({
+                  'background-color': '#391815',
+              });
+          }
+          if(node === 'A3'){
+              cys.elements(`edge`).style({
+                  'width' :0.7,
+                  'line-color': '#444',
+              })
+              cys.elements(`edge[source = "${node}"]`).style({
+                  'width':2.3,
+                  'line-color': '#03A9F4',
+                  'z-index': 3,
+              })
+              let s=[['C5'], ['C3'],['C3', 'C2'],['C1'],['C4','C3']]
+              for(let i = 1; i<=5; i++){
+                  for(let j = 0; j<s[i-1].length; j++){
+                      cys.elements(`edge[source = "B${i}"][target="${s[i-1][j]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              let t = [['D2'],['D2'],['D2'],['D2'],['D2']]
+              for(let k = 1; k<=5; k++){
+                  for(let l = 0; l<t[k-1].length; l++){
+                      cys.elements(`edge[source = "C${k}"][target="${t[k-1][l]}"]`).style({'width':2.3, 'line-color': '#03A9F4','z-index':3})
+                  }
+              }
+              cys.$('#D1').style({
+                  'background-color': '#391815',
+              });
+          }
         });
         cys.on('mouseout', 'node', function(evt){
           node = evt.target.id();
-          cys.elements(`edge[source = "${node}"]`).style({
+          cys.elements(`edge`).style({
               'width' :1,
               'line-color': '#777',
           })
-          console.log( 'out ' + node );
-        });
+          cys.$('#D1').style({'background-color': '#F44336',});
+          cys.$('#D2').style({'background-color': '#F44336',});
 
+        });
+        cys.center();
+        cys.fit();
         this.setState({'cy': cys})
 
         // cy.json();
@@ -192,7 +267,10 @@ class Model extends Component {
     }
 
     render() {
-
+        var min = 1;
+        var max = 6;
+        var random =Math.floor(Math.random() * (max - min)) + min;
+        console.log(random);
         return <div className = "cy" style={cyStyle} ref={(cyRef) => {
             this.cyRef = cyRef;
         }}/>

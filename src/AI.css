@@ -4,26 +4,33 @@
     background-color: inherit;
     display:flex;
 }
-.About .left{
-    margin-top:170px;
-    color: var(--main-text);
-    text-align: left;
-    margin-left:100px;
-    margin-right:60px;
-    width:50%;
-    height:calc(100%-170px);
-}
+
 .left h1{
-    font-size:60px;
+    font-size: 4vw;
     text-align:left;
     margin-bottom:60px;
 }
 .About .right{
     margin-right:50px;
-    width: 50%;
+    width: 600px;
     height:100%;
     display:flex;
     align-items: center;
+}
+.About .left{
+    margin-top:170px;
+    color: var(--main-text);
+    text-align: left;
+    margin-left:100px;
+    margin-right:20px;
+    width:50%;
+    height:calc(100%-170px);
+}
+.left h2{
+    font-size:1.7vw;
+}
+.left p{
+    font-size:1.1vw;
 }
 .stats{
     display:flex;
