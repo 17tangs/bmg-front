@@ -14,8 +14,8 @@ cytoscape.use( coseBilkent );
 // cydagre(cytoscape);
 
 let cyStyle = {
-    width: '100%',
-    height: '100%',
+    width: '600px',
+    height: '50%',
 };
 
 let conf = {
@@ -28,8 +28,6 @@ let conf = {
         {
             selector: 'node',
             style: {
-                'width':'30px',
-                'height':'30px',
                 'shape':'ellipse',
                 'text-valign': 'center',
                 'text-halign': 'center',
