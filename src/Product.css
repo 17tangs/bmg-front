@@ -17,10 +17,14 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+.top .imageContainer{
+    width:80%;
+    display:flex;
+}
 
 .top h1{
     font-size: 6vw;
-    color: var(--main-blue);
+    color: var(--bg-color);
 }
 
 .top p{
@@ -38,4 +42,86 @@
     height: 200px;
     display: flex;
     justify-content: center;
+}
+
+
+.process{
+    background-color: #FFF;
+    width:100%;
+    height: 500px;
+    display:flex;
+}
+
+.process .left{
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.processContainer{
+    width:500px;
+    height:80%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.processContainer .annotate1{
+    position:absolute;
+    bottom: 50px;
+    left: 0;
+    display:flex;
+    align-items: center;
+}
+
+.annotate1 .text{
+    width: 110px;
+    margin-right: 10px;
+}
+.annotate1 .line{
+    height: 0;
+    width: 30px;
+    border-bottom: 1px solid black;
+}
+
+.process .right{
+    text-align:left;
+    padding-right:5%;
+    width:45%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.processContainer .annotate2{
+    position:absolute;
+    top: 50px;
+    left: 0;
+    display:flex;
+    align-items: center;
+}
+
+.annotate2 .text{
+    width: 110px;
+    margin-right: 0px;
+}
+.annotate2 .line{
+    height: 0;
+    width: 30px;
+    border-bottom: 1px solid black;
+}
+
+.process .right{
+    text-align:left;
+    padding-right:5%;
+    width:45%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.process h2{
+    font-weight:800;
+    font-size: 2.5vw;
 }
