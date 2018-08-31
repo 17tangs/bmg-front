@@ -1,12 +1,10 @@
 .Cloud{
     height:100%;
     width:100%;
-    background-color: #FFF;
-    color: var(--bg-color);
     display:flex;
+    color: var(--main-text);
 }
 .Cloud .left{
-    color: var(--main-text);
     margin-left:100px;
     margin-right:60px;
     width:50%;
@@ -15,6 +13,7 @@
     height:calc(100%-170px);
 }
 .right h1{
+    font-size:4vw;
     text-align:left;
     margin-bottom:60px;
 }
@@ -35,13 +34,13 @@
 }
 .img1{
     position:absolute;
-    right:0;
-    top:0;
-    width:60%;
+    left:0;
+    top:0px;
+    width:65%;
 }
 .img2{
     position:absolute;
     bottom:0;
-    left:0;
-    width:70%;
+    right:0;
+    width:50%;
 }

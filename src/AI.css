@@ -39,7 +39,6 @@
     width:600px;
     height:450px;
     position:relative;
-    border: 1px solid green;
     color:var(--main-text);
 }
 .annotateImg{
@@ -67,16 +66,14 @@
 }
 .malignant .line{
     position:absolute;
-    height:50px;
+    height:40px;
     right: 25px;
     width:1px;
     border:none;
     border-right: 1px solid white;
 }
 .malignant .text{
-    position:absolute;
-    top: 55px;
-    right:0;
+    margin-top:50px;
     width:78px;
 
 }

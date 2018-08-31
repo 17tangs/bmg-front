@@ -36,8 +36,8 @@ class App extends Component {
                 <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
                 <ReactPageScroller ref={c => this.reactPageScroller = c}>
                     <Banner bannerData = {data.bannerData} />
-                    <AI />
                     <Cloud />
+                    <AI />
                 </ReactPageScroller>
              {/*  <NewsRegion newsData={data.newsData}/>
               <Footer footerData = {data.footerData} /> */}
