@@ -1,0 +1,41 @@
+.Product{
+    color: var(--bg-color);
+    position:absolute;
+    top:0;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--main-text);
+}
+
+.top{
+    padding:100px;
+    width: calc(100% - 200px);
+    height: 575px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top h1{
+    font-size: 6vw;
+    color: var(--main-blue);
+}
+
+.top p{
+    font-size:1vw;
+    font-size:12px;
+    color: #AAA;
+}
+
+
+.features{
+    padding-top: 100px;
+    background-color: #EEE;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}

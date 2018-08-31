@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Banner from './Banner';
-import NewsRegion from './NewsRegion';
 import Footer from './Footer';
 import Cloud from './Cloud';
+import Product from './Product';
 import AI from './AI';
 import {data} from './data.js'
 import './animate.css';
@@ -34,11 +34,12 @@ class App extends Component {
 
             <div className="App">
                 <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
-                <ReactPageScroller ref={c => this.reactPageScroller = c}>
+                <Product />
+                {/* <ReactPageScroller ref={c => this.reactPageScroller = c}>
                     <Banner bannerData = {data.bannerData} />
                     <Cloud />
                     <AI />
-                </ReactPageScroller>
+                </ReactPageScroller> */}
              {/*  <NewsRegion newsData={data.newsData}/>
               <Footer footerData = {data.footerData} /> */}
             </div>
