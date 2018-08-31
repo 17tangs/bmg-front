@@ -19,6 +19,9 @@ class App extends Component {
     constructor(props){
         super(props);
         this.reactPageScroller = null;
+        this.state={
+            page:'Home',
+        }
     }
     componentDidMount(){
         AOS.init({
@@ -29,21 +32,33 @@ class App extends Component {
     goToPage = (pageNumber) => {
       this.reactPageScroller.goToPage(pageNumber);
     }
+    handleClick = (e) =>{
+        this.setState({
+            page:e.target.id
+        });
+    }
     render() {
-        return (
+        if(this.state.page === 'Home'){
+            return (
 
-            <div className="App">
-                <Header headerInfo = {data.headerInfo} handleFeedback = {this.handleFeedback} handleLang = {this.handleLang} handleWechat = {this.handleWechat}/>
-                <Product />
-                {/* <ReactPageScroller ref={c => this.reactPageScroller = c}>
-                    <Banner bannerData = {data.bannerData} />
-                    <Cloud />
-                    <AI />
-                </ReactPageScroller> */}
-             {/*  <NewsRegion newsData={data.newsData}/>
-              <Footer footerData = {data.footerData} /> */}
-            </div>
-    );
+                <div className="App">
+                    <Header color = '#FFF' handleClick={this.handleClick}  headerInfo = {data.headerInfo} />
+                    <ReactPageScroller ref={c => this.reactPageScroller = c}>
+                        <Banner bannerData = {data.bannerData} />
+                        <Cloud />
+                        <AI />
+                    </ReactPageScroller>
+                </div>
+            );
+        }
+        else if(this.state.page === 'Products'){
+            return (
+                <div className="App">
+                    <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+                    <Product />
+                </div>
+            );
+        }
   }
 }
 

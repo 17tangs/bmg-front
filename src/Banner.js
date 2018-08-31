@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Banner.css';
 import Particles from 'react-particles-js';
-
+import Fade from 'react-reveal/Fade';
 
 const particleOptions = {particles: {
     number:{
@@ -35,13 +35,12 @@ class Banner extends Component{
                 <div className="shadow" />
                 <div className="regionSplitVL" >
                     <div className="med1"> <span style={{color:'red'}} > Eliminating </span> women's breast cancer using
-                    <div class="pushEffect">
-                      <span>AI</span>
-                      <span>Big Data</span>
-                      <span>Cloud</span>
+                        <div class="pushEffect">
+                          <span>AI</span>
+                          <span>Big Data</span>
+                          <span>Cloud</span>
+                        </div>
                     </div>
-                </div>
-
 
                         {/* {this.props.bannerData.header}</p> */}
                     {/* <div>

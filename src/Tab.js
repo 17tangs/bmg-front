@@ -7,7 +7,7 @@ class Tab extends Component{
         this.state = {
             classes: 'line',
             show: 'none',
-            color: 'var(--main-text)',
+            color: this.props.color,
             lineColor: 'rgba(0,0,0,0)',
         }
     }
@@ -16,25 +16,24 @@ class Tab extends Component{
             this.setState({
                 classes: 'line animated zoomIn',
                 color: 'var(--main-blue)',
-                lineColor: 'var(--main-blue)',
+                lineColor: this.props.color,
                 show: 'block',
             })
         }
         else{
             this.setState({
                 classes: 'line',
-                color: 'var(--main-text)',
+                color: this.props.color,
                 lineColor: 'rgba(0,0,0,0)',
                 show: 'none',
             })
 
         }
-        console.log(e.type);
     }
     render(){
         return(
-            <div className = "Tab" onMouseOver={this.hover} onMouseOut={this.hover}>
-                <div style={{marginBottom:'2px', color: `${this.state.color}`}}>{this.props.name}</div>
+            <div className = "Tab" onClick={this.props.handleClick} onMouseOver={this.hover} onMouseOut={this.hover}>
+                <div id={this.props.name} style={{marginBottom:'2px', color: `${this.props.color}`}}>{this.props.name}</div>
                 <div className = {this.state.classes} style = {{borderTop: `2px solid ${this.state.lineColor}`}}></div>
             </div>
         )
