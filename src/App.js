@@ -59,6 +59,14 @@ class App extends Component {
                 </div>
             );
         }
+        else{
+            return (
+                <div className="App">
+                    <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+                    <Product />
+                </div>
+            )
+        }
   }
 }
 

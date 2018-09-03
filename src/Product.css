@@ -10,9 +10,9 @@
 }
 
 .top{
-    padding:100px;
-    width: calc(100% - 200px);
-    height: 575px;
+    padding: 10%;
+    width: 80%;
+    height: 490px;
     display:flex;
 }
 .top .left{
@@ -23,34 +23,28 @@
     justify-content: center;
     text-align: left;
 }
-.top .right{
+
+.top .imgContainer{
     width:50%;
     height:100%;
     display:flex;
     align-items: center;
     justify-content: center;
 }
-
-.top .imgContainer{
-    display:flex;
-    height:80%;
-    justify-content: center;
-}
 .imgContainer img{
-    height:100%;
     margin-left:20px;
     margin-right:20px;
+    box-shadow: 7px 7px 30px #CCC;
 }
-.left h1{
+.Product h1{
     font-size: 6vw;
     color: var(--bg-color);
 }
 
-.left p{
+#mission{
     margin-left:10px;
     margin-top:0;
-    font-size:1vw;
-    font-size:12px;
+    font-size:1.3vw;
     color: #AAA;
 }
 .hi{

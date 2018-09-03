@@ -26,10 +26,12 @@
     width:50%;
     height:calc(100%-170px);
 }
-.left h2{
+.About h2{
+    color: #CCC;
     font-size:1.7vw;
 }
-.left p{
+.About p{
+    color: #888;
     font-size:1.1vw;
 }
 .stats{
