@@ -1,0 +1,184 @@
+.Contact{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #FFF;
+    --line-color: var(--main-blue);
+}
+
+.contactTop{
+    height:20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactTop h1{
+    color:var(--bg-color);
+}
+
+.contactContent{
+    width:100%;
+    height: 80%;
+    display:flex;
+}
+
+.contactContent .contactLeft{
+    width:calc(50% - 100px);
+    height:100%;
+    margin-left:80px;
+    margin-right:20px;
+
+}
+
+.contactContent .contactRight{
+    text-align:left;
+    width:calc(50% - 100px);
+    height:100%;
+    margin-left:20px;
+    margin-right:80px;
+}
+.contactRight h2{
+    text-align: center;
+}
+.contactRight h3{
+    color:black;
+}
+input:focus,
+textarea:focus{
+    outline:none;
+}
+#contact{
+    height:500px;
+    display:flex;
+    flex-direction: column;
+}
+#info{
+    height:500px;
+    padding-left: 40px;
+    padding-right:40px;
+    display:flex;
+    flex-direction: column;
+}
+
+#contact input{
+    font-size:15px;
+    border:none;
+    padding: 30px 50px 0px 50px;
+}
+
+#contact input:focus::placeholder{
+    color: var(--main-blue);
+}
+#contact textarea{
+    width:calc(100%);
+    height:calc(100%);
+    font-size:15px;
+    border:none;
+}
+#contact button{
+    font-size:18px;
+    width: 100px;
+    height:50px;
+    margin:45px;
+    border:none;
+    background-color:var(--main-blue);
+    color:white;
+}
+#contact button:hover{
+    background-color:#0398db;
+    box-shadow: 5px 5px 5px #CCC;
+}
+.contactMessage{
+    height:100px;
+    width: calc(100% - 100px);
+    margin: 30px 50px 0px 48px;
+    position:relative;
+}
+.leftBox{
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    pointer-events:none;
+    transform: scaleY(0);
+    border-left: 2px solid var(--line-color);
+}
+.rightBox{
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    pointer-events:none;
+    transform: scaleY(0);
+    border-right: 2px solid var(--line-color);
+}
+.topBox{
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    pointer-events:none;
+    transform: scaleX(0);
+    border-top: 2px solid var(--line-color);
+}
+.bottomBox{
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    position:absolute;
+    top:-10px;
+    left:-10px;
+    pointer-events:none;
+    transform: scaleX(0);
+    border-bottom: 2px solid var(--line-color);
+}
+.contactLine{
+    margin: 10px 50px 0 50px;
+    transform: scaleX(0);
+    border-top:2px solid var(--line-color);
+}
+.focusLeft{
+    transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
+    transform-origin: left;
+}
+.blurLeft{
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+.focusTop{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out;
+}
+
+.blurTop{
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 500ms ease-in-out;
+}
+.focusRight{
+    transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
+    transform-origin: right;
+}
+.blurRight{
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+}
+.focusBottom{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 500ms ease-in-out;
+}
+
+.blurBottom{
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 500ms ease-in-out;
+}

@@ -3,6 +3,7 @@ import Header from './Header';
 import Banner from './Banner';
 import Footer from './Footer';
 import Cloud from './Cloud';
+import Contact from './Contact';
 import Product from './Product';
 import AI from './AI';
 import {data} from './data.js'
@@ -20,7 +21,7 @@ class App extends Component {
         super(props);
         this.reactPageScroller = null;
         this.state={
-            page:'Home',
+            page:'Contact Us',
         }
     }
     componentDidMount(){
@@ -58,6 +59,14 @@ class App extends Component {
                     <Product />
                 </div>
             );
+        }
+        else if(this.state.page === "Contact Us"){
+            return(
+                <div className="App">
+                    <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+                    <Contact />
+                </div>
+            )
         }
         else{
             return (
