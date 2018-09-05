@@ -2,25 +2,25 @@ import React, {Component} from 'react';
 import Feature from './Feature';
 import Fade from 'react-reveal/Fade';
 import Reveal from 'react-reveal/Reveal';
-// import './Product.css';
+import './MVC.css';
 
 
 
-class Product extends Component{
+class MVC extends Component{
     render(){
         return(
             <div className="Product">
                 <div className='top'>
+                    <div className="imgContainer">
+                        <img src={require('./img/2.png')}/>
+                    </div>
                     <div className='left'>
-                        <Reveal effect="animated fadeIn" delay={800}>
-                        <h1 style={{marginLeft:'0', paddingLeft:'0'}}>Dr. Lotus AI</h1>
+                        <Reveal effect="animated slideInLeft" delay={0}>
+                        <h1 style={{marginLeft:'0', paddingLeft:'0'}}>MedVision Cloud</h1>
                     </Reveal>
-                    <Reveal effect="animated fadeInLeft">
+                    <Reveal effect="animated fadeIn">
                         <p id="mission">The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
                     </Reveal>
-                    </div>
-                    <div className="imgContainer">
-                        <img src={require('./img/product1.png')} style={{width:'60%'}} />
                     </div>
                 </div>
                 <div className='features'>
@@ -55,4 +55,4 @@ class Product extends Component{
         )
     }
 }
-export default Product;
+export default MVC;

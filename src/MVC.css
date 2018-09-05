@@ -1,3 +1,4 @@
+
 .Product{
     color: var(--bg-color);
     position:absolute;
@@ -6,7 +7,8 @@
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: var(--main-text);
+    background-color: #FFF;
+
 }
 
 .top{
@@ -16,7 +18,9 @@
     display:flex;
 }
 .top .left{
-    width:50%;
+    background: #F8F8F8;
+    position:relative;
+    width:80%;
     height:100%;
     display:flex;
     flex-direction: column;
@@ -25,21 +29,34 @@
 }
 
 .top .imgContainer{
-    width:50%;
+    width:70%;
     height:100%;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .imgContainer img{
-    width:80%;
+    width:100%;
+    height:120%;
     margin-left:20px;
     margin-right:20px;
-    box-shadow: 7px 7px 30px #CCC;
+    /* box-shadow: 7px 7px 30px #CCC; */
 }
-.Product h1{
-    font-size: 6vw;
+.Product .left h1{
+    background-color:var(--main-blue);
+    font-size: 5vw;
+    position:absolute;
+    left:-150px;
+    top:100px;
     color: var(--bg-color);
+    color:#FFF;
+}
+.Product .left p{
+    position:absolute;
+    top:250px;
+    left:20px;
+    width:395px;
+    text-align: justify;
 }
 
 #mission{

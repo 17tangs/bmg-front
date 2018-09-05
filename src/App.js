@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Cloud from './Cloud';
 import Contact from './Contact';
+import MVC from './MVC';
 import Product from './Product';
 import AI from './AI';
 import {data} from './data.js'
@@ -52,11 +53,19 @@ class App extends Component {
                 </div>
             );
         }
-        else if(this.state.page === 'Products'){
+        else if(this.state.page === 'Lotus AI'){
             return (
                 <div className="App">
                     <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
                     <Product />
+                </div>
+            );
+        }
+        else if(this.state.page === 'MVC'){
+            return (
+                <div className="App">
+                    <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+                    <MVC />
                 </div>
             );
         }

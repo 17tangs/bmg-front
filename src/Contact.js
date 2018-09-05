@@ -48,11 +48,19 @@ class Contact extends Component{
         return(
             <div className="Contact">
                 <div className="contactTop">
+                    <h1>Contact Us</h1>
                 </div>
                 <div className="contactContent">
                     <div className="contactLeft">
+                        <div id="info">
+                        <h4>Email: </h4> <span><a href="mailto:info@bostonmeditech.com">info@bostonmeditech.com </a></span>
+                        <h4>Phone: </h4> <span>1-781-270-1513</span>
+                        <h4>Address: </h4> <span>15 New England Executive Park, Burlington, MA 01803, U.S.A</span>
+                    </div>
+                    </div>
+                    <div className="divider" />
+                    <div className="contactRight">
                         <form id="contact" onSubmit={this.handleSubmit}>
-                        <h2> Leave a Message </h2>
                             <input placeholder="Name" onFocus = {this.onFocus} onBlur={this.onBlur} id="name" type="text" tabIndex="1" required maxLength="20" autoFocus/>
                             <div className= {`contactLine ${this.state.nameAnimation}Left`}/>
                             <input placeholder="Email" onFocus = {this.onFocus} onBlur={this.onBlur} id="email" type="email" tabIndex="2" required maxLength="30"/>
@@ -68,16 +76,7 @@ class Contact extends Component{
                         </form>
 
                     </div>
-                    <div className="divider" />
-                    <div className="contactRight">
-                        <div id="info">
-                        <h2> Contact Us </h2>
-                        <h4>Email: </h4> <span><a href="mailto:info@bostonmeditech.com">info@bostonmeditech.com </a></span>
-                        <h4>Phone: </h4> <span>1-781-270-1513</span>
-                        <h4>Address: </h4> <span>15 New England Executive Park, Burlington, MA 01803, U.S.A</span>
-                    </div>
 
-                    </div>
                 </div>
             </div>
         )

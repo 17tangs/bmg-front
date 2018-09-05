@@ -9,6 +9,7 @@
 
 .contactTop{
     height:20%;
+    margin-top:80px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -24,19 +25,25 @@
 }
 
 .contactContent .contactLeft{
-    width:calc(50% - 100px);
+    width:calc(38%);
     height:100%;
-    margin-left:80px;
+    margin-left:12%;
+    text-align: right;
     margin-right:20px;
 
+}
+.divider{
+    height:400px;
+    width:1px;
+    border-left:1px solid var(--bg-color);
 }
 
 .contactContent .contactRight{
     text-align:left;
-    width:calc(50% - 100px);
+    width:calc(38%);
     height:100%;
     margin-left:20px;
-    margin-right:80px;
+    margin-right:12%;
 }
 .contactRight h2{
     text-align: center;
@@ -67,7 +74,7 @@ textarea:focus{
     padding: 30px 50px 0px 50px;
 }
 
-#contact input:focus::placeholder{
+#contact input:focus::placeholder, textarea:focus::placeholder{
     color: var(--main-blue);
 }
 #contact textarea{

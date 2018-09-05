@@ -16,7 +16,8 @@ class Header extends Component{
                 </div> */}
                 <div className="tabs" >
                     <Tab name = 'Home' handleClick = {this.props.handleClick} color = {this.props.color}/>
-                    <Tab name = 'Products' handleClick = {this.props.handleClick} color = {this.props.color}/>
+                    <Tab name = 'Lotus AI' handleClick = {this.props.handleClick} color = {this.props.color}/>
+                    <Tab name = 'MVC' handleClick = {this.props.handleClick} color = {this.props.color}/>
                     <Tab name = 'Contact Us' handleClick = {this.props.handleClick} color = {this.props.color}/>
                 </div>
             </div>
