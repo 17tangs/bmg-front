@@ -5,6 +5,9 @@ class Contact extends Component{
     constructor(props){
         super(props);
         this.state={
+            name: '',
+            email: '',
+            message: '',
             nameAnimation:'',
             emailAnimation:'',
             contentAnimation:'',
@@ -44,6 +47,30 @@ class Contact extends Component{
             })
         }
     }
+
+    handleSubmit = (event) =>{
+        let s = {name: this.state.name, email: this.state.email, message: this.state.message}
+        event.preventDefault();
+        fetch('http://localhost:5000/user/Sam', {
+          method: 'post',
+          body: JSON.stringify(s),
+      }).then((response) => {console.log});
+    }
+    handleNameChange = (e) =>{
+        this.setState({
+            name: e.target.value,
+        })
+    }
+    handleEmailChange = (e) =>{
+        this.setState({
+            email: e.target.value,
+        })
+    }
+    handleMessageChange = (e) =>{
+        this.setState({
+            message: e.target.value,
+        })
+    }
     render(){
         return(
             <div className="Contact">
@@ -60,19 +87,19 @@ class Contact extends Component{
                     </div>
                     <div className="divider" />
                     <div className="contactRight">
-                        <form id="contact" onSubmit={this.handleSubmit}>
-                            <input placeholder="Name" onFocus = {this.onFocus} onBlur={this.onBlur} id="name" type="text" tabIndex="1" required maxLength="20" autoFocus/>
+                        <form  id="contact" onSubmit={this.handleSubmit}>
+                            <input placeholder="Name" value={this.state.name} onChange={this.handleNameChange} onFocus = {this.onFocus} onBlur={this.onBlur} id="name" type="text" tabIndex="1" required maxLength="20" autoFocus/>
                             <div className= {`contactLine ${this.state.nameAnimation}Left`}/>
-                            <input placeholder="Email" onFocus = {this.onFocus} onBlur={this.onBlur} id="email" type="email" tabIndex="2" required maxLength="30"/>
+                            <input placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} onFocus = {this.onFocus} onBlur={this.onBlur} id="email" type="email" tabIndex="2" required maxLength="30"/>
                             <div className= {`contactLine ${this.state.emailAnimation}Left`}/>
                             <div className="contactMessage">
-                                <textarea placeholder="Content" onFocus={this.onFocus} onBlur={this.onBlur} id="content" tabIndex="3" required maxLength="500"></textarea>
+                                <textarea placeholder="Content" value={this.state.message} onChange={this.handleMessageChange} onFocus={this.onFocus} onBlur={this.onBlur} id="content" tabIndex="3" required maxLength="500"></textarea>
                                 <div className={`topBox ${this.state.contentAnimation}Left`} id="top"/>
                                 <div className={`bottomBox ${this.state.contentAnimation}Right`} id="bottom"/>
                                 <div className={`leftBox ${this.state.contentAnimation}Top`} id="left"/>
                                 <div className={`rightBox ${this.state.contentAnimation}Bottom`} id="right"/>
                             </div>
-                            <button>Send </button>
+                            <input id="submit" type="submit" value="Submit" />
                         </form>
 
                     </div>

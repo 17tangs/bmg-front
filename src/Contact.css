@@ -83,16 +83,17 @@ textarea:focus{
     font-size:15px;
     border:none;
 }
-#contact button{
+#contact #submit{
     font-size:18px;
     width: 100px;
     height:50px;
+    padding:10px;
     margin:45px;
     border:none;
     background-color:var(--main-blue);
     color:white;
 }
-#contact button:hover{
+#contact #submit:hover{
     background-color:#0398db;
     box-shadow: 5px 5px 5px #CCC;
 }
