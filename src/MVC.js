@@ -12,15 +12,21 @@ class MVC extends Component{
             <div className="Product">
                 <div className='top'>
                     <div className="imgContainer">
-                        <img src={require('./img/2.png')}/>
+                        {/* <img src={require('./img/2.png')}/> */}
                     </div>
                     <div className='left'>
-                        <Reveal effect="animated slideInLeft" delay={0}>
-                        <h1 style={{marginLeft:'0', paddingLeft:'0'}}>MedVision Cloud</h1>
-                    </Reveal>
-                    <Reveal effect="animated fadeIn">
-                        <p id="mission">The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
-                    </Reveal>
+                        <div className='words'>
+                            <div className="header">
+                            <Reveal effect="animated slideInLeft" delay={0}>
+                                <h1 style={{marginLeft:'0', paddingLeft:'0'}}>MedVision Cloud</h1>
+                            </Reveal>
+                        </div>
+                        <div className="p">
+                            <Reveal effect="animated fadeIn">
+                                <p id='mission'>The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
+                            </Reveal>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <div className='features'>

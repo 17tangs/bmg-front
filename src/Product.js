@@ -11,16 +11,21 @@ class Product extends Component{
         return(
             <div className="Product">
                 <div className='top'>
-                    <div className='left'>
-                        <Reveal effect="animated fadeIn" delay={800}>
-                        <h1 style={{marginLeft:'0', paddingLeft:'0'}}>Dr. Lotus AI</h1>
-                    </Reveal>
-                    <Reveal effect="animated fadeInLeft">
-                        <p id="mission">The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
-                    </Reveal>
-                    </div>
-                    <div className="imgContainer">
-                        <img src={require('./img/product1.png')} style={{width:'60%'}} />
+                    <div className='left2'>
+                        <div className="words">
+                            <div className="header">
+                                <Reveal effect="animated slideInRight" delay={0}>
+                                    <h1 id="lotusHeader" style={{marginLeft:'0', paddingLeft:'0'}}>Dr. Lotus AI</h1>
+                                </Reveal>
+                            </div>
+                            <div className="p2">
+                                <Reveal effect="animated fadeIn">
+                                    <p id="mission">The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
+                                </Reveal>
+                            </div>
+                            </div>
+                        </div>
+                    <div className="imgContainer" id="img2">
                     </div>
                 </div>
                 <div className='features'>

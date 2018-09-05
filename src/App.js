@@ -22,7 +22,7 @@ class App extends Component {
         super(props);
         this.reactPageScroller = null;
         this.state={
-            page:'Contact Us',
+            page:'MVC',
         }
     }
     componentDidMount(){
