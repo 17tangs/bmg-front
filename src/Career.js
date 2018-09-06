@@ -30,7 +30,7 @@ class Career extends Component{
         return(
             <div className="Career">
                 <div className="careerBanner">
-                    <h1> Career at Boston Meditech </h1>
+                    <h1> Career at Boston Meditech Group</h1>
                 </div>
                 <div className="jobContainer">
                     {this.generateJobs()}

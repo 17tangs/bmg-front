@@ -88,51 +88,6 @@ class App extends Component {
                 <Route path="/contact" component={contact}/>
             </div>
         </Router>);
-        // if(this.state.page === 'Home'){
-        //     return (
-        //
-        //         <div className="App">
-        //             <Header color = '#FFF' handleClick={this.handleClick}  headerInfo = {data.headerInfo} />
-        //             <ReactPageScroller ref={c => this.reactPageScroller = c}>
-        //                 <Banner bannerData = {data.bannerData} />
-        //                 <Cloud />
-        //                 <AI />
-        //             </ReactPageScroller>
-        //         </div>
-        //     );
-        // }
-        // else if(this.state.page === 'Lotus AI'){
-        //     return (
-        //         <div className="App">
-        //             <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
-        //             <Product />
-        //         </div>
-        //     );
-        // }
-        // else if(this.state.page === 'MVC'){
-        //     return (
-        //         <div className="App">
-        //             <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
-        //             <MVC />
-        //         </div>
-        //     );
-        // }
-        // else if(this.state.page === "Contact Us"){
-        //     return(
-        //         <div className="App">
-        //             <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
-        //             <Contact />
-        //         </div>
-        //     )
-        // }
-        // else{
-        //     return (
-        //         <div className="App">
-        //             <Header color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
-        //             <Product />
-        //         </div>
-        //     )
-        // }
   }
 }
 
