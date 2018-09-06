@@ -10,7 +10,7 @@ class Header extends Component{
     }
     render(){
         return(
-            <div className="Header">
+            <div className="Header" style={{position:this.props.headerPosition}}>
                 {/* <div className="headerLogo">
                     <span>Boston Meditech Group </span>
                 </div> */}

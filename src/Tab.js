@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import './Tab.css';
 
 class Tab extends Component{
@@ -31,11 +32,26 @@ class Tab extends Component{
         }
     }
     render(){
+        let page = ''
+        switch (this.props.name){
+            case('MVC'):
+                page = '/MVC'
+                break;
+            case('Lotus AI'):
+                page = '/Lotus'
+                break;
+            case('Contact Us'):
+                page = 'contact'
+                break;
+            default:
+                page = '/'
+                break;
+        }
         return(
-            <div className = "Tab" onClick={this.props.handleClick} onMouseOver={this.hover} onMouseOut={this.hover}>
+            <Link to={page} style={{textDecoration:'none'}} ><div className = "Tab" onClick={this.props.handleClick} onMouseOver={this.hover} onMouseOut={this.hover}>
                 <div id={this.props.name} style={{marginBottom:'2px', color: `${this.props.color}`}}>{this.props.name}</div>
                 <div className = {this.state.classes} style = {{borderTop: `2px solid ${this.state.lineColor}`}}></div>
-            </div>
+            </div></Link>
         )
     }
 }

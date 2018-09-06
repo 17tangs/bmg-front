@@ -80,6 +80,7 @@ class Contact extends Component{
               status: 'please try again',
           })
       }});
+          window.grecaptcha.reset();
           this.setState({
               name:'',
               email:'',

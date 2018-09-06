@@ -4,7 +4,6 @@
     height: var(--header-height);
     width: 100%;
     min-width:735px;
-    position: fixed;
     top: 0;
     z-index: 3;
     /* box-shadow: 2px 2px 3px #888; */

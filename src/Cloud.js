@@ -10,7 +10,7 @@ class Cloud extends Component{
                 <div className = "left">
                     <div className="imageContainer">
                         <img className="img2" src={require('./img/focus1.jpg')}/>
-                        <img className="img1" src={require('./img/focus2.jpg')}/>
+                        <img className="img1" src={require('./img/pathology.png')} style={{height:'60%'}}/>
                     </div>
                 </div>
                 <div className="right">
