@@ -8,8 +8,9 @@
 }
 
 .contactTop{
-    height:20%;
-    margin-top:80px;
+    background: url('./img/career.jpg') no-repeat;
+    background-size: 100% auto;
+    height:calc(20% + 80px);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +34,7 @@
 
 }
 .divider{
+    margin-top:20px;
     height:450px;
     width:1px;
     border-left:1px solid var(--bg-color);
@@ -61,6 +63,7 @@ textarea:focus{
     flex-direction: column;
 }
 #info{
+    margin-top:50px;
     height:500px;
     padding-left: 40px;
     padding-right:40px;

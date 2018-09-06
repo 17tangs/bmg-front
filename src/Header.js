@@ -15,10 +15,11 @@ class Header extends Component{
                     <span>Boston Meditech Group </span>
                 </div> */}
                 <div className="tabs" >
-                    <Tab name = 'Home' handleClick = {this.props.handleClick} color = {this.props.color}/>
-                    <Tab name = 'Lotus AI' handleClick = {this.props.handleClick} color = {this.props.color}/>
-                    <Tab name = 'MVC' handleClick = {this.props.handleClick} color = {this.props.color}/>
-                    <Tab name = 'Contact Us' handleClick = {this.props.handleClick} color = {this.props.color}/>
+                    <Tab name = 'Home'  color = {this.props.color}/>
+                    <Tab name = 'Lotus AI'  color = {this.props.color}/>
+                    <Tab name = 'MVC'  color = {this.props.color}/>
+                    <Tab name = 'Career' color = {this.props.color}/>
+                    <Tab name = 'Contact Us'  color = {this.props.color}/>
                 </div>
             </div>
         )

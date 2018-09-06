@@ -1,0 +1,20 @@
+.careerBanner{
+    background: url('./img/career.jpg') no-repeat;
+    background-size: 100% auto;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.careerBanner h1{
+    font-size:50px;
+    color:black;
+
+}
+.jobContainer{
+    padding-top:50px;
+    margin-bottom:70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

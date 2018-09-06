@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Cloud from './Cloud';
 import Contact from './Contact';
+import Career from './Career';
 import MVC from './MVC';
 import Product from './Product';
 import AI from './AI';
@@ -40,7 +41,7 @@ class Home extends Component{
 const Lotus = () =>{
     return(
         <div className="App">
-            <Header  headerPosition="absolute" color = '#212121' handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+            <Header  headerPosition="absolute" color = '#212121' />
             <Product />
         </div>
     )
@@ -48,10 +49,18 @@ const Lotus = () =>{
 const MVCPage = () =>{
     return(
         <div className="App">
-            <Header color = '#212121'  headerPosition="absolute" handleClick={this.handleClick} headerInfo = {data.headerInfo} />
+            <Header color = '#212121'  headerPosition="absolute" />
             <MVC />
         </div>
     );
+}
+const CareerPage = () =>{
+    return(
+        <dvi className="App">
+            <Header color = "#212121" headerPosition="absolute" />
+            <Career />
+        </dvi>
+    )
 }
 const contact = () =>{
     return(<div className="App">
@@ -75,6 +84,7 @@ class App extends Component {
                 <Route exact path="/" component={Home}/>
                 <Route path="/Lotus" component={Lotus}/>
                 <Route path="/MVC" component={MVCPage}/>
+                <Route path="/Career" component={CareerPage}/>
                 <Route path="/contact" component={contact}/>
             </div>
         </Router>);

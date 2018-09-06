@@ -43,6 +43,9 @@ class Tab extends Component{
             case('Contact Us'):
                 page = 'contact'
                 break;
+            case('Career'):
+                page = 'Career'
+                break;
             default:
                 page = '/'
                 break;

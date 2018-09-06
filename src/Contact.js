@@ -54,7 +54,7 @@ class Contact extends Component{
     handleSubmit = (event) =>{
         let s = {name: this.state.name, email: this.state.email, message: this.state.message, response: this.state.gr}
         event.preventDefault();
-        fetch('http://localhost:5000/user/Sam', {
+        fetch('https://enigmatic-scrubland-29320.herokuapp.com/api', {
           method: 'post',
           body: JSON.stringify(s),
       }).then((response) => {return response.json()}).then((r)=>{if(r === 201){
@@ -75,9 +75,9 @@ class Contact extends Component{
               status: `Please verify you're human`
           })
       }
-      else{
+      else if(r === 402){
           this.setState({
-              status: 'please try again',
+              status: 'email failed to send',
           })
       }});
           window.grecaptcha.reset();
