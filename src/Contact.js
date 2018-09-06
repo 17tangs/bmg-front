@@ -6,6 +6,7 @@ class Contact extends Component{
     constructor(props){
         super(props);
         this.state={
+            gr: '',
             status: '',
             name: '',
             email: '',
@@ -51,14 +52,14 @@ class Contact extends Component{
     }
 
     handleSubmit = (event) =>{
-        let s = {name: this.state.name, email: this.state.email, message: this.state.message}
+        let s = {name: this.state.name, email: this.state.email, message: this.state.message, response: this.state.gr}
         event.preventDefault();
         fetch('http://localhost:5000/user/Sam', {
           method: 'post',
           body: JSON.stringify(s),
       }).then((response) => {return response.json()}).then((r)=>{if(r === 201){
           this.setState({
-              status: 'success',
+              status: 'success!',
           })
           setTimeout(
               function() {
@@ -69,9 +70,14 @@ class Contact extends Component{
           );
 
       }
+      else if(r === 400){
+          this.setState({
+              status: `Please verify you're human`
+          })
+      }
       else{
           this.setState({
-              status: 'failed',
+              status: 'please try again',
           })
       }});
           this.setState({
@@ -96,10 +102,17 @@ class Contact extends Component{
             message: e.target.value,
         })
     }
-    verifyCallback = ()=>{}
+    verifyCallback = (r)=>{
+        this.setState({
+            gr: r,
+        })
+    }
     callback = () => {}
     render(){
-
+        let c = 'red';
+        if(this.state.status === 'success!'){
+            c = 'black'
+        }
         return(
             <div className="Contact">
                 <div className="contactTop">
@@ -127,11 +140,12 @@ class Contact extends Component{
                                 <div className={`leftBox ${this.state.contentAnimation}Top`} id="left"/>
                                 <div className={`rightBox ${this.state.contentAnimation}Bottom`} id="right"/>
                             </div>
-                            <Recaptcha sitekey="6Lcxv24UAAAAAGMnangszy5qHs3QZCy-EXgbCsBL"     verifyCallback={this.verifyCallback}
-    onloadCallback={this.callback} render="explicit"/>,
+                            <div style={{marginLeft:'50px'}}>
+                                <Recaptcha sitekey="6Lcxv24UAAAAAGMnangszy5qHs3QZCy-EXgbCsBL"     verifyCallback={this.verifyCallback} onloadCallback={this.callback} render="explicit"/>
+                            </div>
                             <div className="submitRegion">
                                 <input id="submit" type="submit" value="Submit" />
-                                <h3>{this.state.status}</h3>
+                                <h4 style={{color:c}}>{this.state.status}</h4>
                             </div>
                         </form>
 
