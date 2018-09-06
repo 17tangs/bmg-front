@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import './Contact.css';
+var Recaptcha = require('react-recaptcha');
 
 class Contact extends Component{
     constructor(props){
         super(props);
         this.state={
+            status: '',
             name: '',
             email: '',
             message: '',
@@ -54,7 +56,30 @@ class Contact extends Component{
         fetch('http://localhost:5000/user/Sam', {
           method: 'post',
           body: JSON.stringify(s),
-      }).then((response) => {console.log});
+      }).then((response) => {return response.json()}).then((r)=>{if(r === 201){
+          this.setState({
+              status: 'success',
+          })
+          setTimeout(
+              function() {
+                  this.setState({status: ''});
+              }
+              .bind(this),
+              3000
+          );
+
+      }
+      else{
+          this.setState({
+              status: 'failed',
+          })
+      }});
+          this.setState({
+              name:'',
+              email:'',
+              message:'',
+          })
+
     }
     handleNameChange = (e) =>{
         this.setState({
@@ -71,7 +96,10 @@ class Contact extends Component{
             message: e.target.value,
         })
     }
+    verifyCallback = ()=>{}
+    callback = () => {}
     render(){
+
         return(
             <div className="Contact">
                 <div className="contactTop">
@@ -99,7 +127,12 @@ class Contact extends Component{
                                 <div className={`leftBox ${this.state.contentAnimation}Top`} id="left"/>
                                 <div className={`rightBox ${this.state.contentAnimation}Bottom`} id="right"/>
                             </div>
-                            <input id="submit" type="submit" value="Submit" />
+                            <Recaptcha sitekey="6Lcxv24UAAAAAGMnangszy5qHs3QZCy-EXgbCsBL"     verifyCallback={this.verifyCallback}
+    onloadCallback={this.callback} render="explicit"/>,
+                            <div className="submitRegion">
+                                <input id="submit" type="submit" value="Submit" />
+                                <h3>{this.state.status}</h3>
+                            </div>
                         </form>
 
                     </div>
