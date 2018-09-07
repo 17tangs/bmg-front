@@ -31,7 +31,7 @@ let focusData = {title: 'Focus',
                  img2: './img/pathology.png',
                  }
 let AIData = {title: "Model",
-              subtitle: 'Cutting edge deep learning models, on the cloud.',
+              subtitle: 'Cutting edge deep learning models, on the cloud',
               description1: 'We utilize state of the art deep learning models like convolutional neural networks and recurrent neural network to train tens of thousands of labeled mammography images over hundreds of hours. The result is classification of malignant lesions more accurate than ever before.',
               description2: 'Not only is the modeled trained by large dataset of professionally labeled image, as users upload their personal mammography images we utilize that data to continuously improve our model for optimal results.',
               stats:[{
