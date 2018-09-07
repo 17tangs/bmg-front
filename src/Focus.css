@@ -5,22 +5,23 @@
     color: var(--main-text);
 }
 .Cloud .left{
-    margin-left:100px;
-    margin-right:60px;
+    margin-left:50px;
     width:50%;
     display:flex;
+    justify-content: center;
     align-items:center;
-    height:calc(100%-170px);
+    height:calc(100%-50px);
 }
 .right h1{
-    font-size:4vw;
+    font-size:60px;
     text-align:left;
+    margin-top:0;
     margin-bottom:60px;
 }
 .Cloud .right{
-    margin-right:100px;
+    margin-right:50px;
     text-align: left;
-    width: 50%;
+    width: calc(50% - 50px);
     height:100%;
     display:flex;
     flex-direction: column;
@@ -34,19 +35,25 @@
     color: #888;
 }
 .imageContainer{
-    width:500px;
-    height:400px;
+    width:70%;
+    height:50%;
     position:relative;
 }
 .img1{
+    background: url('./img/pathology.png') no-repeat;
+    background-size: 100% auto;
+    height:50%;
+    width:60%;
     position:absolute;
     left:0;
     top:0px;
-    width:65%;
 }
 .img2{
+    background: url('./img/focus1.jpg') no-repeat;
+    background-size: 100% auto;
     position:absolute;
     bottom:0;
     right:0;
-    width:50%;
+    width:60%;
+    height: 80%;
 }

@@ -41,10 +41,10 @@ class Tab extends Component{
                 page = '/Lotus'
                 break;
             case('Contact Us'):
-                page = 'contact'
+                page = '/contact'
                 break;
-            case('Career'):
-                page = 'Career'
+            case('Careers'):
+                page = '/Career'
                 break;
             default:
                 page = '/'

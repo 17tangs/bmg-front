@@ -26,30 +26,24 @@ class Banner extends Component{
     handleSelect = (e) =>{
         e.type === "mouseover" ? this.setState({'select':'block'}) : this.setState({'select':'none'})
     }
+    generateKeywords = () =>{
+        let keyDiv = []
+        this.props.data.list.forEach((k) => keyDiv.push(<span>{k}</span>));
+        return keyDiv;
+    }
 
     render(){
+        let data = this.props.data;
         return(
-            //http://bostonmeditech.com/wp-content/uploads/2017/04/qtq50-583Xtc.jpeg
             <div style={{background: `url(${require('./img/bg1.jpeg')}) no-repeat`, backgroundSize: "100% 140%"}} className="banner" >
                 <Particles className='particles particleContainer' params={particleOptions}/>
                 <div className="shadow" />
                 <div className="regionSplitVL" >
-                    <div className="med1"> <span style={{color:'red'}} > Eliminating </span> women's breast cancer using
+                    <div className="med1"> <span style={{color:'red'}} > {data.verb}</span> {data.sentence}
                         <div class="pushEffect">
-                          <span>AI</span>
-                          <span>Big Data</span>
-                          <span>Cloud</span>
+                            {this.generateKeywords()}
                         </div>
                     </div>
-
-                        {/* {this.props.bannerData.header}</p> */}
-                    {/* <div>
-                        <div className="med4" onMouseOver={this.handleSelect} onMouseOut={this.handleSelect}>
-                            <div className="starthere">
-                                <span>{this.props.bannerData.start.en}</span>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
                 <div className="regionSplitVR" />
             </div>

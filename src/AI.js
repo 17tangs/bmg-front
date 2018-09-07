@@ -30,54 +30,72 @@ class About extends Component{
         }
     }
     render(){
+        let data = this.props.data;
         let benign,malignant;
         this.state.show === 'b' ? benign = 'block' : benign = 'none';
         this.state.show === 'm' ? malignant = 'block' : malignant = 'none';
+
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf('safari') != -1) {
+            if (ua.indexOf('chrome') > -1) {
         return(
             <Media query="(max-width:1100px)">
                 {matches =>
                     matches ? (
                         <div className="About2">
-                            <div className="top">
+                            <div className="AITop">
                                 <Flip top>
-                                    <h1 style={{color:`var(--main-blue)`}}>Model  </h1>
+                                    <h1 style={{color:`var(--main-blue)`}}>{data.title}  </h1>
                                  </Flip>
                                  <Fade left>
-                                     <h2>Cutting edge deep learning models, on the cloud.</h2>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nesciunt minima, provident ipsam officia distinctio reiciendis error fugit eveniet iste voluptas esse unde doloremque veritatis animi cum voluptatum maiores modi.</p>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nesciunt minima, provident ipsam officia distinctio reiciendis error fugit eveniet iste voluptas esse unde doloremque veritatis animi cum voluptatum maiores modi.</p>
+                                     <h2>{data.subtitle}</h2>
+                                     <p>{data.description1}</p>
+                                     <p>{data.description2}</p>
                                  </Fade>
                                  <Fade bottom>
                                      <div className="stats">
-                                         <Stat number = '1.5' unit = 's' description = 'prediction time' icon = {require('./img/timeIcon.png')}/>
-                                         <Stat number = '20,000' unit = '' description = 'images trained' icon = {require('./img/picIcon.png')}/>
-                                         <Stat number = '92' unit = '%' description = 'model AUC' icon = {require('./img/accuracyIcon.png')}/>
+                                         <Stat number = {data.stats[0].number} unit = {data.stats[0].unit} description = {data.stats[0].description} icon = {require('./img/timeIcon.png')}/>
+                                         <Stat number = {data.stats[1].number} unit = {data.stats[1].unit} description = {data.stats[1].description} icon = {require('./img/picIcon.png')}/>
+                                         <Stat number = {data.stats[2].number} unit = {data.stats[2].unit} description = {data.stats[2].description} icon = {require('./img/accuracyIcon.png')}/>
                                      </div>
                                 </Fade>
                             </div>
-                            <Model handleHover={this.handleHover}/>
+                            <div className="annotation">
+                                <div className="annotateImg">
+                                    <h4>Image data</h4>
+                                </div>
+                                <div className="imgLine"/>
+                                <div>
+                                    <div className={`benign ${this.state.c}`} style={{display:`${benign}`}}>
+                                        <div className="text">{this.state.p}% Benign</div>
+                                        <div className="line"/>
+                                    </div>
+                                    <div className={`malignant ${this.state.c}`} style={{display:`${malignant}`}}>
+                                        <div className="line"/>
+                                        <div className="text">{this.state.p}% Malignant</div>
+                                    </div>
+                                </div>
+                                <Model handleHover = {this.handleHover}/>
+                            </div>
                         </div>
                 ):(
                     <div className="About">
                         <div className = "left">
                             <Flip top>
-                                {/*AI <span style={{color:`var(--main-text)`}}>&</span> Big Data*/}
-                            <h1 style={{color:`var(--main-blue)`}}>Model  </h1>
-                            {/* <div data-aos = 'fade-right'> */}
-                        </Flip>
-                        <Fade left>
-                            <h2>Cutting edge deep learning models, on the cloud.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nesciunt minima, provident ipsam officia distinctio reiciendis error fugit eveniet iste voluptas esse unde doloremque veritatis animi cum voluptatum maiores modi.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nesciunt minima, provident ipsam officia distinctio reiciendis error fugit eveniet iste voluptas esse unde doloremque veritatis animi cum voluptatum maiores modi.</p>
-                        </Fade>
-                        <Fade bottom>
-                            <div className="stats">
-                                <Stat number = '1.5' unit = 's' description = 'prediction time' icon = {require('./img/timeIcon.png')}/>
-                                <Stat number = '20,000' unit = '' description = 'images trained' icon = {require('./img/picIcon.png')}/>
-                                <Stat number = '92' unit = '%' description = 'model AUC' icon = {require('./img/accuracyIcon.png')}/>
-                            </div>
-                        </Fade>
-                        {/* </div> */}
+                                <h1 style={{color:`var(--main-blue)`}}>{data.title}  </h1>
+                             </Flip>
+                             <Fade left>
+                                 <h2>{data.subtitle}</h2>
+                                 <p>{data.description1}</p>
+                                 <p>{data.description2}</p>
+                             </Fade>
+                             <Fade bottom>
+                                 <div className="stats">
+                                     <Stat number = {data.stats[0].number} unit = {data.stats[0].unit} description = {data.stats[0].description} icon = {require('./img/timeIcon.png')}/>
+                                     <Stat number = {data.stats[1].number} unit = {data.stats[1].unit} description = {data.stats[1].description} icon = {require('./img/picIcon.png')}/>
+                                     <Stat number = {data.stats[2].number} unit = {data.stats[2].unit} description = {data.stats[2].description} icon = {require('./img/accuracyIcon.png')}/>
+                                 </div>
+                            </Fade>
                         </div>
                         <div className="right">
                             <div className="annotation">
@@ -97,17 +115,86 @@ class About extends Component{
                                 </div>
                                 <Model handleHover = {this.handleHover}/>
                             </div>
-
-                            {/* <div className="imageContainer">
-                                <img className="img1" src={require('./img/u25.png')}/>
-                                <img className="img2" src={require('./img/u18.jpg')}/>
-                            </div> */}
                         </div>
                     </div>
                 )}
             </Media>
 
-        )
+        )}
+        else{
+
+        return(
+            <Media query="(max-width:1100px)">
+                {matches =>
+                    matches ? (
+                        <div className="About2">
+                            <div className="AITop">
+                                    <h1 style={{color:`var(--main-blue)`}}>{data.title}  </h1>
+                                     <h2>{data.subtitle}</h2>
+                                     <p>{data.description1}</p>
+                                     <p>{data.description2}</p>
+                                     <div className="stats">
+                                         <Stat number = {data.stats[0].number} unit = {data.stats[0].unit} description = {data.stats[0].description} icon = {require('./img/timeIcon.png')}/>
+                                         <Stat number = {data.stats[1].number} unit = {data.stats[1].unit} description = {data.stats[1].description} icon = {require('./img/picIcon.png')}/>
+                                         <Stat number = {data.stats[2].number} unit = {data.stats[2].unit} description = {data.stats[2].description} icon = {require('./img/accuracyIcon.png')}/>
+                                     </div>
+                            </div>
+                            <div className="annotation">
+                                <div className="annotateImg">
+                                    <h4>Image data</h4>
+                                </div>
+                                <div className="imgLine"/>
+                                <div>
+                                    <div className={`benign ${this.state.c}`} style={{display:`${benign}`}}>
+                                        <div className="text">{this.state.p}% Benign</div>
+                                        <div className="line"/>
+                                    </div>
+                                    <div className={`malignant ${this.state.c}`} style={{display:`${malignant}`}}>
+                                        <div className="line"/>
+                                        <div className="text">{this.state.p}% Malignant</div>
+                                    </div>
+                                </div>
+                                <Model handleHover = {this.handleHover}/>
+                            </div>
+                        </div>
+                ):(
+                    <div className="About">
+                        <div className = "left">
+                                <h1 style={{color:`var(--main-blue)`}}>{data.title}  </h1>
+                                 <h2>{data.subtitle}</h2>
+                                 <p>{data.description1}</p>
+                                 <p>{data.description2}</p>
+                                 <div className="stats">
+                                     <Stat number = {data.stats[0].number} unit = {data.stats[0].unit} description = {data.stats[0].description} icon = {require('./img/timeIcon.png')}/>
+                                     <Stat number = {data.stats[1].number} unit = {data.stats[1].unit} description = {data.stats[1].description} icon = {require('./img/picIcon.png')}/>
+                                     <Stat number = {data.stats[2].number} unit = {data.stats[2].unit} description = {data.stats[2].description} icon = {require('./img/accuracyIcon.png')}/>
+                                 </div>
+                        </div>
+                        <div className="right">
+                            <div className="annotation">
+                                <div className="annotateImg">
+                                    <h4>Image data</h4>
+                                </div>
+                                <div className="imgLine"/>
+                                <div>
+                                    <div className={`benign ${this.state.c}`} style={{display:`${benign}`}}>
+                                        <div className="text">{this.state.p}% Benign</div>
+                                        <div className="line"/>
+                                    </div>
+                                    <div className={`malignant ${this.state.c}`} style={{display:`${malignant}`}}>
+                                        <div className="line"/>
+                                        <div className="text">{this.state.p}% Malignant</div>
+                                    </div>
+                                </div>
+                                <Model handleHover = {this.handleHover}/>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </Media>
+
+        )}
+        }
     }
 }
 

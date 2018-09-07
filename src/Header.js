@@ -8,18 +8,18 @@ class Header extends Component{
     constructor(){
         super();
     }
+    generateTabs = () =>{
+        let tabsDiv = []
+        this.props.tabs.forEach((t)=>{
+            tabsDiv.push(<Tab name = {t} color = {this.props.color}/>);
+        })
+        return tabsDiv;
+    }
     render(){
         return(
             <div className="Header" style={{position:this.props.headerPosition}}>
-                {/* <div className="headerLogo">
-                    <span>Boston Meditech Group </span>
-                </div> */}
                 <div className="tabs" >
-                    <Tab name = 'Home'  color = {this.props.color}/>
-                    <Tab name = 'Lotus AI'  color = {this.props.color}/>
-                    <Tab name = 'MVC'  color = {this.props.color}/>
-                    <Tab name = 'Career' color = {this.props.color}/>
-                    <Tab name = 'Contact Us'  color = {this.props.color}/>
+                    {this.generateTabs()}
                 </div>
             </div>
         )
