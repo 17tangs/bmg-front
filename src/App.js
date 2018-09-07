@@ -25,7 +25,7 @@ let tabs = ['Home', 'Lotus AI', 'MVC','Careers', 'Contact Us']
 let bannerData = {verb: 'Eliminating', sentence:"women's breast cancer using", list: ['AI', 'Big Data', 'Cloud']}
 let focusData = {title: 'Focus',
                  subtitle: 'Using Machine Learning to diagnose breast cancer in mammography and pathology images',
-                 description1: "Here at Boston Meditech Group, we strive to use modern day technology to advance woman's healthcare. Since breast cancer is one of the leading cause of death for woamn, our efforts focus on firstly eliminating woman's breast cancer using AI diagnosis, specifically through detection in mammography and pathology images",
+                 description1: "Here at Boston Meditech, we strive to use modern day technology to advance woman's healthcare. Since breast cancer is one of the leading cause of death for woamn, our efforts focus on firstly eliminating woman's breast cancer using AI diagnosis, specifically through detection in mammography and pathology images",
                  description2: '',
                  img1: './img/focus1.jpg',
                  img2: './img/pathology.png',
