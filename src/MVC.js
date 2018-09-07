@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Feature from './Feature';
 import Fade from 'react-reveal/Fade';
+import Footer from './Footer'
 import Reveal from 'react-reveal/Reveal';
 import './MVC.css';
-
 
 
 class MVC extends Component{
@@ -23,40 +23,29 @@ class MVC extends Component{
                         </div>
                         <div className="p">
                             <Reveal effect="animated fadeIn">
-                                <p id='mission'>The artificial intelligence-assisted diagnosis system has realized the application of artificial intelligence and high-risk screening for breast cancer, breast image interpretation, rectal imaging interpretation and other artificial intelligence applications. The breast cancer imaging field has reached the world's leading level. </p>
+                                <p id='mission'>Medvision Cloud for Business is a Cloud-based Picture Archiving and Communication System featuring AI-aided Diagnosis in Medical Imaging, which can be considered as a combination of Cloud PACS and Dr Lotus AI.</p>
+
                             </Reveal>
                         </div>
                         </div>
                     </div>
                 </div>
                 <div className='features'>
-                    <Feature img = {require('./img/accuracy.png')} title='High Accuracy' description='The detection rate of the lesion is as high as 96% with high stability and consistency, better than the diagnoses of professional doctors.'/>
-                    <Feature img = {require('./img/speed.png')} title='Instant Detection' description='Diagnose in seconds. Save more than 80% of the analyzing time for doctors, relieve the pressure of diagnosis and treatment'/>
-                    <Feature img = {require('./img/reliable.png')} title='Reliable Data' description='Uses top hospitals data obtained from the diagnoses and guidance of authoritative experts in the industry.'/>
+                    <Feature img = {require('./img/accuracy.png')} title='One for All' description='Easily manage medical images of all modalities on any device.'/>
+                    <Feature img = {require('./img/speed.png')} title='AI Ready' description='Accelerate your diagnosis process using Dr Lotus AI.'/>
+                    <Feature img = {require('./img/reliable.png')} title='Security on Duty' description='Move to the reliable cloud with 24/7 security.'/>
                 </div>
-                <div className = 'process'>
-                    <div className="left" >
-                        <div className="processContainer">
-                            <img src={require('./img/cycle.png')} style={{height:'400px', width:'400px'}}/>
-                            <div data-aos = "fade-right" className = "annotate1">
-                                <div className="text"> Remote visit, green transfer </div>
-                                <div className="line" />
-                            </div>
-                            <div data-aos = "fade-right" className = "annotate2">
-                                <div className="text"> Appointment Reminder Customer Service </div>
-                                <div className="line" />
-                            </div>
-                        </div>
+                <div className = "getStarted">
+                    <div className = "getStartedL">
+                        <h1>Client Version</h1>
+                        <p>Medivision cloud also provides individual users with free AI aided diagnosis services in Medical Imaging.</p>
+                        <div className = "button"><a href="https://medvisioncloud.com" target='_blank'>Get started</a></div>
                     </div>
-                    <div className="right">
-                        <Fade>
-                        <h2>Diagnosis Made Easy.</h2>
-                    </Fade>
-                    <Fade>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sapiente vero, dolor officia fuga adipisci fugiat ut iste dolorum quaerat quis quam eos libero? Reiciendis provident suscipit adipisci dignissimos necessitatibus.</p>
-                    </Fade>
+                    <div className = "getStartedR">
+                        <div className = "getStartedImg"/>
                     </div>
                 </div>
+            <Footer />
             </div>
         )
     }

@@ -1,7 +1,7 @@
 .careerBanner{
     background: url('./img/career.jpg') no-repeat;
     background-size: 100% auto;
-    height:300px;
+    height:235px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,7 @@
 
 }
 .jobContainer{
+    height: 360px;
     padding-top:50px;
     margin-bottom:70px;
     display:flex;

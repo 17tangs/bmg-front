@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from './Footer';
 import Job from './Job';
 import './Career.css';
 
@@ -50,6 +51,7 @@ class Career extends Component{
                 <div className="jobContainer">
                     {this.generateJobs()}
                 </div>
+                <Footer />
             </div>
 
         )

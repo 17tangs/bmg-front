@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Feature from './Feature';
 import Fade from 'react-reveal/Fade';
+import Footer from './Footer';
 import Reveal from 'react-reveal/Reveal';
 // import './Product.css';
 
@@ -56,6 +57,7 @@ class Product extends Component{
                     </Fade>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

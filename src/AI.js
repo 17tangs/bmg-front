@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from './Footer';
 import './AI.css';
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
@@ -79,6 +80,7 @@ class About extends Component{
                             </div>
                         </div>
                 ):(
+                    <div>
                     <div className="About">
                         <div className = "left">
                             <Flip top>
@@ -117,6 +119,9 @@ class About extends Component{
                             </div>
                         </div>
                     </div>
+                    <Footer front={true}/>
+                </div>
+
                 )}
             </Media>
 

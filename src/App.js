@@ -25,15 +25,15 @@ let tabs = ['Home', 'Lotus AI', 'MVC','Careers', 'Contact Us']
 let bannerData = {verb: 'Eliminating', sentence:"women's breast cancer using", list: ['AI', 'Big Data', 'Cloud']}
 let focusData = {title: 'Focus',
                  subtitle: 'Using Machine Learning to diagnose breast cancer in mammography and pathology images',
-                 description1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reiciendis voluptatibus, veniam facere autem voluptatum odit nisi ad! Reprehenderit, vitae accusamus blanditiis impedit laudantium ad rem beatae ipsam alias veritatis!',
-                 description2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, praesentium earum harum sed consequatur doloremque obcaecati rerum esse, similique aut sapiente voluptatibus voluptates quasi, sit hic accusamus. Odit, mollitia, vitae.',
+                 description1: "Here at Boston Meditech, we strive to use modern day technology to advance woman's healthcare. Since breast cancer is the leading cause of death for woamn, our efforts focus on firstly eliminating woman's breast cancer using AI diagnosis, specifically through detection in mammography and pathology images",
+                 description2: '',
                  img1: './img/focus1.jpg',
                  img2: './img/pathology.png',
                  }
 let AIData = {title: "Model",
               subtitle: 'Cutting edge deep learning models, on the cloud.',
-              description1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum vel officia molestias nulla, delectus, iste ut magnam rem asperiores quibusdam, ratione sed alias vitae illum cum nam earum soluta. Soluta.',
-              description2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab a pariatur, temporibus modi quas voluptas adipisci ea eos praesentium, officia. Enim neque ipsam modi facere qui eius repellat ipsum. Velit.',
+              description1: 'We utilize state of the art deep learning models like convolutional neurl networks and recurrent neural network to train tens and thousands of labeled mammography images over hundreds of hours. The result is classification of malignant lesions more accurate than ever before.',
+              description2: 'Not only is the modeled trained by large dataset of professionally labeled image, as users upload their personal mammography images we utilize that data to continuously improve our model for optimal results.',
               stats:[{
                     number: '1.5',
                     unit: 's',
