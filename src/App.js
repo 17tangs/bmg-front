@@ -25,21 +25,21 @@ let tabs = ['Home', 'Lotus AI', 'MVC','Careers', 'Contact Us']
 let bannerData = {verb: 'Eliminating', sentence:"women's breast cancer using", list: ['AI', 'Big Data', 'Cloud']}
 let focusData = {title: 'Focus',
                  subtitle: 'Using Machine Learning to diagnose breast cancer in mammography and pathology images',
-                 description1: "Here at Boston Meditech, we strive to use modern day technology to advance woman's healthcare. Since breast cancer is the leading cause of death for woamn, our efforts focus on firstly eliminating woman's breast cancer using AI diagnosis, specifically through detection in mammography and pathology images",
+                 description1: "Here at Boston Meditech, we strive to use modern day technology to advance woman's healthcare. Since breast cancer is one of the leading cause of death for woamn, our efforts focus on firstly eliminating woman's breast cancer using AI diagnosis, specifically through detection in mammography and pathology images",
                  description2: '',
                  img1: './img/focus1.jpg',
                  img2: './img/pathology.png',
                  }
 let AIData = {title: "Model",
               subtitle: 'Cutting edge deep learning models, on the cloud.',
-              description1: 'We utilize state of the art deep learning models like convolutional neurl networks and recurrent neural network to train tens and thousands of labeled mammography images over hundreds of hours. The result is classification of malignant lesions more accurate than ever before.',
+              description1: 'We utilize state of the art deep learning models like convolutional neural networks and recurrent neural network to train tens and thousands of labeled mammography images over hundreds of hours. The result is classification of malignant lesions more accurate than ever before.',
               description2: 'Not only is the modeled trained by large dataset of professionally labeled image, as users upload their personal mammography images we utilize that data to continuously improve our model for optimal results.',
               stats:[{
                     number: '1.5',
                     unit: 's',
                     description: 'Prediction time'
                 },{
-                    number: '20000',
+                    number: '20,000',
                     unit: '',
                     description: 'Images trained'
                 },{
