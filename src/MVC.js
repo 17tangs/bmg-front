@@ -31,9 +31,9 @@ class MVC extends Component{
                     </div>
                 </div>
                 <div className='features'>
-                    <Feature img = {require('./img/accuracy.png')} title='One for All' description='Easily manage medical images of all modalities on any device.'/>
-                    <Feature img = {require('./img/speed.png')} title='AI Ready' description='Accelerate your diagnosis process using Dr Lotus AI.'/>
-                    <Feature img = {require('./img/reliable.png')} title='Security on Duty' description='Move to the reliable cloud with 24/7 security.'/>
+                    <Feature img = {require('./img/one4all.png')} title='One for All' description='Easily manage medical images of all modalities on any device.'/>
+                    <Feature img = {require('./img/AI.png')} title='AI Ready' description='Accelerate your diagnosis process using Dr Lotus AI.'/>
+                    <Feature img = {require('./img/security.png')} title='Security on Duty' description='Move to the reliable cloud with 24/7 security.'/>
                 </div>
                 <div className = "getStarted">
                     <div className = "getStartedL">
