@@ -39,7 +39,7 @@ class MVC extends Component{
                     <div className = "getStartedL">
                         <h1>Client Version</h1>
                         <p>Medivision cloud also provides individual users with free AI aided diagnosis services in Medical Imaging.</p>
-                        <div className = "button"><a href="https://medvisioncloud.com" target='_blank'>Get started</a></div>
+                        <div className = "button"><a href="http://medvisioncloud.com" target='_blank'>Get started</a></div>
                     </div>
                     <div className = "getStartedR">
                         <div className = "getStartedImg"/>
