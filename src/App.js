@@ -21,7 +21,7 @@ import {
   Link
 } from 'react-router-dom';
 
-let tabs = ['Home', 'Lotus AI', 'MVC','Careers', 'Contact Us']
+let tabs = ['Home', 'Dr. Lotus AI', 'MVC','Careers', 'Contact Us']
 let bannerData = {verb: 'Eliminating', sentence:"women's breast cancer using", list: ['AI', 'Big Data', 'Cloud']}
 let focusData = {title: 'Focus',
                  subtitle: 'Using Machine Learning to diagnose breast cancer in mammography and pathology images',

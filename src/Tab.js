@@ -37,7 +37,7 @@ class Tab extends Component{
             case('MVC'):
                 page = '/MVC'
                 break;
-            case('Lotus AI'):
+            case('Dr. Lotus AI'):
                 page = '/Lotus'
                 break;
             case('Contact Us'):
