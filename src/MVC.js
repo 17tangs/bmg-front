@@ -23,7 +23,7 @@ class MVC extends Component{
                         </div>
                         <div className="p">
                             <Reveal effect="animated fadeIn">
-                                <p id='mission'>Medvision Cloud for Business is a Cloud-based Picture Archiving and Communication System featuring AI-aided Diagnosis in Medical Imaging, which can be considered as a combination of Cloud PACS and Dr Lotus AI.</p>
+                                <p id='mission'>Medvision Cloud for Business is a Cloud-based Picture Archiving and Communication System featuring AI-aided Diagnosis in Medical Imaging, which can be considered as a combination of Cloud PACS and Dr. Lotus AI.</p>
 
                             </Reveal>
                         </div>
@@ -38,7 +38,7 @@ class MVC extends Component{
                 <div className = "getStarted">
                     <div className = "getStartedL">
                         <h1>Client Version</h1>
-                        <p>Medivision cloud also provides individual users with free AI aided diagnosis services in Medical Imaging.</p>
+                        <p>Medivision cloud also provides individual users with free AI-aided diagnosis services in medical imaging.</p>
                         <div className = "button"><a href="http://medvisioncloud.com" target='_blank'>Get started</a></div>
                     </div>
                     <div className = "getStartedR">
