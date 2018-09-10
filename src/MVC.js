@@ -18,7 +18,7 @@ class MVC extends Component{
                         <div className='words'>
                             <div className="header">
                             <Reveal effect="animated slideInLeft" delay={0}>
-                                <h1 style={{marginLeft:'0', paddingLeft:'0'}}>MedVision Cloud</h1>
+                                <h1 style={{marginLeft:'0', paddingLeft:'0'}}>Medvision Cloud</h1>
                             </Reveal>
                         </div>
                         <div className="p">
@@ -38,7 +38,7 @@ class MVC extends Component{
                 <div className = "getStarted">
                     <div className = "getStartedL">
                         <h1>Client Version</h1>
-                        <p>Medivision cloud also provides individual users with free AI-aided diagnosis services in medical imaging.</p>
+                        <p>Medvision Cloud also provides individual users with free AI-aided diagnosis services in medical imaging.</p>
                         <div className = "button"><a href="http://medvisioncloud.com" target='_blank'>Get started</a></div>
                     </div>
                     <div className = "getStartedR">
