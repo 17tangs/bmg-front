@@ -18,7 +18,7 @@ class Footer extends Component{
                     matches ? (
                         <div className="foot" style={{borderTop:s}}>
                             <div className="footline">
-                                <p>Copyright © 2018 Boston Meditech Group - Advancing women's healthcare</p>
+                                <p>Copyright © 2018 Boston Meditech Group - Advancing women's healthcare with AI</p>
 
                             </div>
                             <div className="footline2" style={{pointerEvents:'none'}}>
@@ -27,7 +27,7 @@ class Footer extends Component{
                     ) : (
                         <div className="foot" style={{borderTop:s}}>
                             <div className="footline">
-                                <p>Copyright © 2018 Boston Meditech Group - Advancing women's healthcare</p>
+                                <p>Copyright © 2018 Boston Meditech Group - Advancing women's healthcare with AI</p>
                             </div>
                         </div>
                     )
