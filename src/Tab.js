@@ -35,7 +35,7 @@ class Tab extends Component{
         let page = ''
         switch (this.props.name){
             case('Medvision Cloud'):
-                page = '/Medvision Cloud'
+                page = '/MVC'
                 break;
             case('Dr. Lotus AI'):
                 page = '/Lotus'
