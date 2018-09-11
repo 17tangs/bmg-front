@@ -34,8 +34,8 @@ class Tab extends Component{
     render(){
         let page = ''
         switch (this.props.name){
-            case('MVC'):
-                page = '/MVC'
+            case('Medvision Cloud'):
+                page = '/Medvision Cloud'
                 break;
             case('Dr. Lotus AI'):
                 page = '/Lotus'
