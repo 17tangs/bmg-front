@@ -30,9 +30,9 @@ class Product extends Component{
                     </div>
                 </div>
                 <div className='features'>
-                    <Feature img = {require('./img/accuracy.png')} title='High Accuracy' description='The detection rate of the lesion is as high as 96% with high stability and consistency, better than the diagnoses of professional doctors.'/>
-                    <Feature img = {require('./img/speed.png')} title='Instant Detection' description='Diagnose in seconds. Save more than 80% of the analyzing time for doctors, relieve the pressure of diagnosis and treatment'/>
-                    <Feature img = {require('./img/reliable.png')} title='Reliable Data' description='Uses top hospitals data obtained from the diagnoses and guidance of authoritative experts in the industry.'/>
+                    <Feature img = {require('./img/accuracy.png')} title='High Accuracy' description='The detection rate of the lesion is as high as 96% with high stability and consistency, even better than the diagnoses of professional doctors.'/>
+                    <Feature img = {require('./img/speed.png')} title='Instant Detection' description='Diagnose in seconds. Save more than 80% of the analyzing time for doctors. Relieve the pressure of diagnosis and treatment.'/>
+                    <Feature img = {require('./img/reliable.png')} title='Reliable Data' description='Use data from top hospitals with the diagnosis and guidance of authoritative experts in the industry.'/>
                 </div>
                 <div className = 'process'>
                     <div className="left" >
