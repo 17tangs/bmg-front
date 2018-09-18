@@ -21,7 +21,7 @@ class Product extends Component{
                             </div>
                             <div className="p2">
                                 <Reveal effect="animated fadeIn">
-                                    <p id="mission">"As a medical image AI-aided diagnosis system, Dr. Lotus AI has realized artificial intelligence applications for breast cancer diagnosis such as screening high-risk populations for breast cancer and breast imaging interpretation. Through the world's leading artificial intelligence and machine learning technology, Dr. Lotus AI aims to assist doctors in the interpretation and diagnosis of medical images related to breast cancer, improve the efficiency by nearly 100 times, and effectively reduce the rate of misdiagnosis and missed diagnosis."</p>
+                                    <p id="mission">As a medical image AI-aided diagnosis system, Dr. Lotus AI has realized artificial intelligence applications for breast cancer diagnosis such as screening high-risk populations for breast cancer and breast imaging interpretation. Dr. Lotus AI aims to assist doctors through improving their efficiency by nearly 100 times, and effectively reducing the rate of misdiagnosis and missed diagnosis.</p>
                                 </Reveal>
                             </div>
                             </div>
