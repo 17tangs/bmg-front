@@ -32,7 +32,7 @@ let focusData = {title: 'Focus',
                  }
 let AIData = {title: "Model",
               subtitle: 'Cutting edge deep learning models, on the cloud',
-              description1: "We utilize state-of-the-art deep learning models like convolutional neural networks and recurrent neural network to train tens of thousands of labeled mammography images over hundreds of hours. The AUC result is the best in today's field of mammography model training.",
+              description1: "We utilize state-of-the-art deep learning models like convolutional neural networks and recurrent neural network to train tens of thousands of labeled mammography images over hundreds of hours. The AUC result is among the best in today's field of mammography model training.",
               description2: '',
               stats:[{
                     number: '1.5',
