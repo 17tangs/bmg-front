@@ -10,13 +10,14 @@
 .contactTop{
     background: url('./img/career.jpg') no-repeat;
     background-size: 100% auto;
-    height:calc(20% + 80px);
+    height:230px;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .contactTop h1{
     color:var(--bg-color);
+    font-size:42px;
 }
 
 .contactContent{

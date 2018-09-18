@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Footer from './Footer';
 import './Contact.css';
 var Recaptcha = require('react-recaptcha');
 
