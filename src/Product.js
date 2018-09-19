@@ -53,7 +53,7 @@ class Product extends Component{
                         <h2>Diagnosis Made Easy.</h2>
                     </Fade>
                     <Fade>
-                        <p>Dr Lotus helps doctors diagnose and follow-up with patients by automating diagnosis for medical imaging, providing high accuracy predictions within seconds. Medical systems integrated with Dr Lotus AI could also provide patients with the tools for self diagnosis, greatly reducing the wait time for detection.</p>
+                        <p>Dr. Lotus AI helps doctors diagnose and follow-up with patients by automating diagnosis for medical imaging, providing high accuracy predictions within seconds. Medical systems integrated with Dr. Lotus AI could also provide patients with the tools for self diagnosis, greatly reducing the waiting time for detection.</p>
                     </Fade>
                     </div>
                 </div>
