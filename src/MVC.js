@@ -30,15 +30,15 @@ class MVC extends Component{
                     </div>
                 </div>
                 <div className='features'>
-                    <Feature img = {require('./img/one4all.png')} title='One for All' description='Easily manage medical images of all modalities on any device.'/>
-                    <Feature img = {require('./img/AI.png')} title='AI Ready' description='Accelerate your diagnosis process using Dr Lotus AI.'/>
-                    <Feature img = {require('./img/security.png')} title='Security on Duty' description='Move to the reliable cloud with 24/7 security.'/>
+                    <Feature img = {require('./img/one4all.png')} title='One for All' description='Easily manage medical images of all modalities on any device'/>
+                    <Feature img = {require('./img/AI.png')} title='AI Ready' description='Accelerate your diagnosis process using Dr Lotus AI'/>
+                    <Feature img = {require('./img/security.png')} title='Security on Duty' description='Move to the reliable cloud with 24/7 security'/>
                 </div>
                 <div className = "getStarted">
                     <div className = "getStartedL">
                         <h1>Get experience in Dr. Lotus AI</h1>
                         <p>Free Trial to experience AI-aided diagnosis services in medical imaging.</p>
-                        <div className = "button"><a href="http://www.medvisioncloud.com/indexEn.html" target='_blank'>Get started for free</a></div>
+                        <div className = "button"><a href="http://kyra.bostonmeditech.com/indexEn.html" target='_blank'>Get started for free</a></div>
                     </div>
                     <div className = "getStartedR">
                         <div className = "getStartedImg"/>
