@@ -22,7 +22,7 @@ import {
 } from 'react-router-dom';
 
 let tabs = ['Home', 'Dr. Lotus AI', 'Medvision Cloud','Careers', 'Contact Us']
-let bannerData = {verb: 'Eliminating', sentence:"women's breast cancer using", list: ['AI', 'Big Data', 'Cloud']}
+let bannerData = {verb: 'Early detection', sentence:"of women's BREAST CANCER using", list: ['AI', 'Big Data', 'Cloud']}
 let focusData = {title: 'Focus',
                  subtitle: 'Using Machine Learning to improve diagnosis of breast cancer in mammography and pathology images',
                  description1: "Here at Boston Meditech Group, we strive to use modern technology to advance women’s healthcare. Since breast cancer is one of the leading death cause for women, our first efforts focus on eliminating woman’s breast cancer using AI technology to improve the efficiency and accuracy  of early diagnosis of the breast cancer in  mammography and pathology images.",
