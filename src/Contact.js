@@ -124,8 +124,8 @@ class Contact extends Component{
                     <div className="contactLeft">
                         <div id="info">
                         <h4>Email: </h4> <span><a href="mailto:info@bostonmeditech.com">info@bostonmeditech.com </a></span>
-                        <h4>Phone: </h4> <span>1-781-270-1513</span>
-                        <h4>Address: </h4> <span>15 New England Executive Park, Burlington, MA 01803, U.S.A</span>
+                        <h4>Phone: </h4> <span>1-781-365-1989</span>
+                        <h4>Address: </h4> <span>20 Mall Rd, Suite 151, Burlington, MA 01803 U.S.</span>
                     </div>
                     </div>
                     <div className="divider" />
